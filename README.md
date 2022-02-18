@@ -1,7 +1,7 @@
 This program installs mods for Dead Island Riptide Definitive edition :)
 ![alt text](https://i.imgur.com/NBClJBt.png)
 
-# >DEADISLAND Riptide MOD MENU<
+# >DEADISLAND Riptide MOD MENU ALPHA<
 
 THANK YOU FOR USING DIRUE BY FireEyeEian.
 
