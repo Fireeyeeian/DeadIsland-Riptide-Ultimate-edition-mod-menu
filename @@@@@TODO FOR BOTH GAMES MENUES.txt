@@ -1,0 +1,28 @@
+WHAT I CHANGED/ADDED
+_______________________________
+
+
+____________
+WHAT IM DONG/FINNISHED
+---------------------
+finished skip intro
+finished directory checking /temp folder setup
+finished fov setup
+fiished bettwer movment tweaks
+finished sprint stamina
+reduce sunflair works
+improved loot done
+running w/ weps done
+jump stamina done
+game audio reverb done
+more ammo done
+bullet pen done
+break door done
+wep durability done
+
+
+____________
+todo:
+-------
+maybe add fatman to improved loot
+add bandits to forced spawning
