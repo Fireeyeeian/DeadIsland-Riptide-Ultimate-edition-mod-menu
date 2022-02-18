@@ -150,8 +150,7 @@ FileInstall, Required_files_and_scripts\sounds\DIR_music.wav, %A_Temp%\@DIRUE_TE
 FileInstall, Required_files_and_scripts\sounds\menu_highlight.wav, %A_Temp%\@DIRUE_TEMPFILES\sounds\menu_highlight.wav,1
 FileInstall, Required_files_and_scripts\sounds\scream_final.wav, %A_Temp%\@DIRUE_TEMPFILES\sounds\scream_final.wav,1
 FileInstall, Required_files_and_scripts\sounds\napalm.wav, %A_Temp%\@DIRUE_TEMPFILES\sounds\napalm.wav,1
-;Run, %A_Temp%\@DIRUE_TEMPFILES\scripts\play_scream_sound_then_quit_riptide.exe,,,
-Run, C:\Users\Eian\Documents\@DEV\@PROJECTS\DIRUE\Required_files_and_scripts\scripts\play_scream_sound_then_quit_riptide.exe,,,
+Run, %A_Temp%\@DIRUE_TEMPFILES\scripts\play_scream_sound_then_quit_riptide.exe,,,
 INV_GEN=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\inventory_gen.scr
 INV_spec=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\inventory_special.scr
 INV_patch=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\inventory_patch.scr
@@ -406,7 +405,7 @@ Gui, Add, Text, x22 y326 w950 h50 +BackgroundTrans, 4. Select which modification
 Gui, Font, S10 BOLD Normal Cblack , Segoe ui
 Gui, Font, CYellow
 ;;;;;;;;;;;;;;;;;;;;;;;;VERSION NUMBER;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-Gui, Add, Text, x750 y64 w100 h30 +BackgroundTrans,Version 0.5
+Gui, Add, Text, x750 y64 w100 h30 +BackgroundTrans,Version 0.5 ;REMEMBER TO UPDATE VERSION XML FOR MAIN MENU
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Generated using SmartGUI Creator 4.0
 Gui, Show, x127 y87 h581 w1014, New GUI Window
