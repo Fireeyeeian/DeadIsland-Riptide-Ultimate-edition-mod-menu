@@ -304,20 +304,20 @@ AudioEffect("Grenade")
 
 //========================================================================================
 
-// $_BUS_Sound                  ( i, 0)        1
-// $_BUS_Music                  ( i, 1)        2
-// $_BUS_Speech                 ( i, 2)        4
-// $_BUS_SpeechPlayer           ( i, 3)        8
-// $_BUS_SoundPlayer            ( i, 4)       16
+// $_BUS_Sound              	( i, 0)        1
+// $_BUS_Music              	( i, 1)        2
+// $_BUS_Speech             	( i, 2)        4
+// $_BUS_SpeechPlayer	    	( i, 3)        8
+// $_BUS_SoundPlayer        	( i, 4)       16
 // $_BUS_MusicConcentrationMode ( i, 5)       32        
-// $_BUS_SpecialMusic           ( i, 6)       64
-// $_BUS_SpecialSound           ( i, 7)      128       
-// $_BUS_GUI                    ( i, 8)      256
-// $_BUS_RadioDialog            ( i, 9)      512
-// $_BUS_QuestDialog            ( i, 10)    1024
-// $_BUS_LoudSound              ( i, 11)    2048
+// $_BUS_SpecialMusic       	( i, 6)       64
+// $_BUS_SpecialSound		    ( i, 7)      128       
+// $_BUS_GUI                	( i, 8)      256
+// $_BUS_RadioDialog          	( i, 9)      512
+// $_BUS_QuestDialog           	( i, 10)    1024
+// $_BUS_LoudSound           	( i, 11)    2048
 // $_BUS_NightHorde             ( i, 12)    4096
-// $_BUS_Ambiences              ( i, 13)    8192
+// $_BUS_Ambiences            	( i, 13)    8192
 
 $_BUSMASK_DEFAULT     (i, 16061) // 1 + 4 + 8 + 16 + 32 + 128 + 512 + 1024 + 2048 + 4096 + 8192
 $_BUSMASK_NO_AI       (i, 14937) // 1 + 8 + 16 + 64  + 512 + 2048 + 4096 + 8192
@@ -385,7 +385,7 @@ AcusticRoomPreset("Arena")
     FadeDistance(2.0)
     ReverbPreset(10)
     ReverbWetDryMix(0.9)
-    TailPreset(_TAIL_NearBuildings)
+	TailPreset(_TAIL_NearBuildings)
 }
 
 AcusticRoomPreset("Backalleys")
@@ -397,7 +397,7 @@ AcusticRoomPreset("Backalleys")
     FadeDistance(1.0)
     ReverbPreset(15)
     ReverbWetDryMix(0.5)
-    TailPreset(_TAIL_NearBuildings)
+	TailPreset(_TAIL_NearBuildings)
 }
 
 AcusticRoomPreset("Balcony")
@@ -446,7 +446,7 @@ AcusticRoomPreset("Cave_Reverberant")
     FadeDistance(1.0)
     ReverbPreset(8)
     ReverbWetDryMix(2.0)
-    // Bus Delay Feedback WetDryMix
+	// Bus Delay Feedback WetDryMix
     //Echo(3, 700, 0.013, 0.1)
     TailPreset(_TAIL_Hall)
 }
@@ -458,7 +458,7 @@ AcusticRoomPreset("Cave_Big")
     FadeDistance(1.0)
     ReverbPreset(10)
     ReverbWetDryMix(1.4)
-    // Bus Delay Feedback WetDryMix
+	// Bus Delay Feedback WetDryMix
     //Echo(3, 700, 0.013, 0.08)
     TailPreset(_TAIL_Hall)
 }
@@ -489,7 +489,7 @@ AcusticRoomPreset("Courtyard")
 {
     BusMask(_BUSMASK_DEFAULT)
     // Bus Delay Feedback WetDryMix
-    //Echo(2, 350, 0.015, 0.05)
+	//Echo(2, 350, 0.015, 0.05)
     //Echo(3, 350, 0.015, 0.08)
     FadeDistance(2.0)
     ReverbPreset(7)
@@ -501,9 +501,9 @@ AcusticRoomPreset("Dream")
 {
     BusMask(_BUSMASK_DEFAULT)
     // Bus Delay Feedback WetDryMix
-    //Echo( 2, 400, 0.1, 0.15)
+	//Echo( 2, 400, 0.1, 0.15)
     //Echo( 3, 400, 0.15, 0.15)
-    //Echo( 10, 400, 0.15, 0.15)
+	//Echo( 10, 400, 0.15, 0.15)
     FadeDistance(1.0)
     ReverbPreset(10)
     ReverbWetDryMix(1.0)
@@ -558,7 +558,7 @@ AcusticRoomPreset("Highway")
     BusMask(_BUSMASK_DEFAULT)
     // Bus Delay Feedback WetDryMix
     //Echo(2, 500, 0.02, 0.1)
-    //Echo(3, 500, 0.02, 0.1)
+	//Echo(3, 500, 0.02, 0.1)
     FadeDistance(1.0)
     ReverbPreset(21)
     ReverbWetDryMix(0.5)
@@ -569,7 +569,7 @@ AcusticRoomPreset("Mountains")
 {
     BusMask(_BUSMASK_DEFAULT)
     // Bus Delay Feedback WetDryMix
-    //Echo(3, 500, 0.2, 0.1)
+	//Echo(3, 500, 0.2, 0.1)
     FadeDistance(1.0)
     ReverbPreset(19)
     ReverbWetDryMix(0.3)
@@ -580,7 +580,7 @@ AcusticRoomPreset("Jungle")
 {
     BusMask(_BUSMASK_DEFAULT)
     // Bus Delay Feedback WetDryMix
-    //Echo(3, 500, 0.2, 0.1)
+	//Echo(3, 500, 0.2, 0.1)
     FadeDistance(1.0)
     ReverbPreset(19)
     ReverbWetDryMix(0.2)
@@ -602,7 +602,7 @@ AcusticRoomPreset("OpenArea")
     BusMask(_BUSMASK_DEFAULT)
     FadeDistance(1.0)
     ReverbPreset(20)
-    //Echo(3, 650, 0.02, 0.03)
+	//Echo(3, 650, 0.02, 0.03)
     ReverbWetDryMix(2.0)
     TailPreset(_TAIL_OpenArea)
 }
@@ -631,7 +631,7 @@ AcusticRoomPreset("Patio")
     Interior()
     BusMask(_BUSMASK_DEFAULT)
     // Bus Delay Feedback WetDryMix
-    //Echo(2, 350, 0.015, 0.05)
+	//Echo(2, 350, 0.015, 0.05)
    // Echo(3, 350, 0.015, 0.08)
     FadeDistance(2.0)
     ReverbPreset(10)
@@ -760,7 +760,7 @@ AcusticRoomPreset("Stadium")
 {
     BusMask(_BUSMASK_DEFAULT)
     // Bus Delay Feedback WetDryMix
-    //Echo(3, 550, 0.25, 0.11)
+	//Echo(3, 550, 0.25, 0.11)
     FadeDistance(1.0)
     ReverbPreset(10)
     ReverbWetDryMix(0.8)
@@ -800,7 +800,7 @@ AcusticRoomPreset("Tunnel")
 AcusticRoomPreset("UnderTheBridge")
 {
     BusMask(_BUSMASK_DEFAULT)
-    //Echo(3, 500, 0.02, 0.10)
+	//Echo(3, 500, 0.02, 0.10)
     FadeDistance(3.0)
     ReverbPreset(15)
     ReverbWetDryMix(0.5)
@@ -839,9 +839,9 @@ AcusticRoomPreset("Wagon")
 AcusticRoomPreset("DZ_Apartments_Chopin_FAR")
 {
     Interior()
-    BusMask(8192)
+	BusMask(8192)
     // Bus Delay Feedback WetDryMix
-    //Echo( 13, 400, 0.15, 0.25)
+	//Echo( 13, 400, 0.15, 0.25)
     FadeDistance(1.0)
     ReverbPreset(34)
     ReverbWetDryMix(0.8)
@@ -851,7 +851,7 @@ AcusticRoomPreset("DZ_Apartments_Chopin_FAR")
 AcusticRoomPreset("DZ_Apartments_Chopin_MIDDLE")
 {
     Interior()
-    BusMask(8192)
+	BusMask(8192)
     // Bus Delay Feedback WetDryMix
     //Echo( 13, 400, 0.15, 0.2)
     FadeDistance(1.0)
@@ -862,9 +862,9 @@ AcusticRoomPreset("DZ_Apartments_Chopin_MIDDLE")
 
 AcusticRoomPreset("DZ_Apartments_Chopin_CLOSE")
 {
-    Interior()
-    BusMask(8192)
-    //Echo( 13, 400, 0.1, 0.2)
+	Interior()
+	BusMask(8192)
+	//Echo( 13, 400, 0.1, 0.2)
     FadeDistance(1.0)
     ReverbPreset(34)
     ReverbWetDryMix(1.0)
@@ -874,8 +874,8 @@ AcusticRoomPreset("DZ_Apartments_Chopin_CLOSE")
 AcusticRoomPreset("Industrial")
 {
     BusMask(_BUSMASK_DEFAULT)
-    // Bus Delay Feedback WetDryMix
-    //Echo(3, 200, 0.3, 0.1)
+	// Bus Delay Feedback WetDryMix
+	//Echo(3, 200, 0.3, 0.1)
     FadeDistance(1.0)
     ReverbPreset(15)
     ReverbWetDryMix(0.8)
@@ -893,8 +893,8 @@ AcusticRoomPreset("Wacky_Reverb")
 AcusticRoomPreset("Temple")
 {
     BusMask(_BUSMASK_DEFAULT)
-    // Bus Delay Feedback WetDryMix
-    //Echo(3, 400, 0.1, 0.1)
+	// Bus Delay Feedback WetDryMix
+	//Echo(3, 400, 0.1, 0.1)
     FadeDistance(1.0)
     ReverbPreset(19)
     ReverbWetDryMix(0.3)
@@ -917,7 +917,7 @@ AcusticRoomPreset("Lighthouse")
 AudioEffect("Credits") 
 {
     Priority(1000)
-    
+	
    // sound
    Volume(_BUS_Sound, 0.0)
    LowPassFilter(_BUS_Sound, 1.0, 0.8, 1.0, 1.0)
@@ -968,7 +968,7 @@ AudioEffect("Credits")
 AudioEffect("Cinematic") 
 {
     Priority(2)
-    
+	
    // sound
    Volume(_BUS_Sound, 0.2)
    LowPassFilter(_BUS_Sound, 1.0, 0.8, 1.0, 1.0)
@@ -1249,11 +1249,11 @@ AudioEffect("NightStart")
 {
    Priority(14)
 
-    // Sound
+	// Sound
    Volume(_BUS_Sound, 0.1)
    LowPassFilter(_BUS_Sound, 1.0, 0.13, 1.0, 1.0)
    
-    // Music
+	// Music
    Volume(_BUS_Music, 1.0)
    LowPassFilter(_BUS_Music, 1.0, 1.0, 1.0, 1.0)
    
@@ -1563,7 +1563,7 @@ AudioEffect ("GamescomSlowmo")
 AudioEffect("TimeFreezingTutorial") 
 {
     Priority(900)
-    
+	
    // sound
    Volume(_BUS_Sound, 0.0)
    

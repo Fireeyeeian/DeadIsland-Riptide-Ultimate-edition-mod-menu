@@ -26,8 +26,8 @@
 !AcusticRoomPreset(s)
 !FadeDistance(f)
 !TailPreset(i)
-!//ReverbPreset(i)
-!//ReverbWetDryMix(f)
+!ReverbPreset(i)
+!ReverbWetDryMix(f)
 // echo for bus $_1 with dealy $_2, feedback $_3 and wet-dry mix $_4
 !Echo(i, f, f, f)
 !BusMask(i)
