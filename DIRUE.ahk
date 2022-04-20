@@ -625,7 +625,7 @@ TF_ReplaceLine(var_weather,"12",12," Set(""f_game_time"", (time - floor(time)) *
 TF_ReplaceLine(var_amb_scr,"5",5,"VarFloat(""f_engine_envprobe_factor"", 0.0099)")
 SplashTextOff
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-MsgBox,4160,Night time?,➤Night time ENABLED`n`n    PLEASE NOTE:`n`n1)--As of now I have been unsuccessful in making the flashlight infinite/have a longer life as well as being able to make the truck headlights work`n`n    2)--I recommend setting your gamma to at least half when in the city/resort and to at least the 3rd notch when in the jungle/laboratory but you should play around with the gamma until you find a nice balance of dark and being able to see`n`n    3)--It can be especially dark in the jungle/laboratory areas as I can't seem to figure out how the Data2.pak loads the maps time/weather files (_light.scr files). This means I can only make changes that effect all maps/areas and not on a per map basis.`n`n **If anyone can help with these issues please let me know by contacting me through my profile on nexus mods or by leaving a post on the mod page.
+MsgBox,4160,Night time?,➤Night time ENABLED`n`n    PLEASE NOTE:`n`n1)--As of now I have been unsuccessful in making the flashlight infinite/have a longer life as well as being able to make the truck headlights work like they did in the now very out dated og mods`n`n    2)--I recommend playing around with your gamma until you find a nice balance of dark and being able to see`n`n    3)--It can be especially dark in the jungle/laboratory areas as I can't seem to figure out how the other .PAKs loads the maps time/weather files (_light.scr files). This means I can only make changes that effect all maps/areas and not on a per map basis.`n`n **If anyone can help with these issues please let me know by contacting me through my profile on nexus mods or by leaving a post on the mod page.
 Enable_BUTTONS_Function()
 return
 
@@ -2064,17 +2064,20 @@ DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;logan
-TF_ReplaceLine(logan_skills,"165",165,"        <skill id=""DeeperPockets"" cat=""Tree3"" max_level=""3"" tier=""1"" desc_params=""6;12;18"">")
-TF_ReplaceLine(logan_skills,"167",167,"            <effect id=""InventorySize"" change=""6""/>")
+TF_ReplaceLine(logan_skills,"170",170,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""152"" max_level=""3"" tier=""1"" desc_params=""6;12;18"">")
+TF_ReplaceLine(logan_skills,"172",172,"            <effect id=""InventorySize"" change=""6""/>")
 ;purna
-TF_ReplaceLine(purna_skills,"170",170,"        <skill id=""DeeperPockets"" cat=""Tree3"" max_level=""3"" tier=""1"" desc_params=""6;12;18"">")
-TF_ReplaceLine(purna_skills,"172",172,"            <effect id=""InventorySize"" change=""6""/>")
+TF_ReplaceLine(purna_skills,"174",174,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""68"" max_level=""3"" tier=""1"" desc_params=""6;12;18"">")
+TF_ReplaceLine(purna_skills,"176",176,"            <effect id=""InventorySize"" change=""6""/>")
 ;samb
- TF_ReplaceLine(samb_skills,"162",162,"        <skill id=""DeeperPockets"" cat=""Tree3"" max_level=""3"" tier=""2"" desc_params=""6;12;18"">")
- TF_ReplaceLine(samb_skills,"164",164,"            <effect id=""InventorySize"" change=""6""/>")
+ TF_ReplaceLine(samb_skills,"166",166,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""36"" max_level=""3"" tier=""2"" desc_params=""6;12;18"">")
+ TF_ReplaceLine(samb_skills,"168",168,"            <effect id=""InventorySize"" change=""6""/>")
 ;xian
- TF_ReplaceLine(xian_skills,"119",119,"        <skill id=""DeeperPockets"" cat=""Tree3"" max_level=""3"" tier=""2"" desc_params=""6;12;18"">")
- TF_ReplaceLine(xian_skills,"121",121,"            <effect id=""InventorySize"" change=""6""/>")
+ TF_ReplaceLine(xian_skills,"123",123,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""103"" max_level=""3"" tier=""2"" desc_params=""6;12;18"">")
+ TF_ReplaceLine(xian_skills,"125",125,"            <effect id=""InventorySize"" change=""6""/>")
+ ;John
+ TF_ReplaceLine(xian_skills,"146",146,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""235"" max_level=""3"" tier=""1"" desc_params=""6;12;18"">")
+ TF_ReplaceLine(xian_skills,"148",148,"            <effect id=""InventorySize"" change=""6""/>")
 SplashTextOff
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 MsgBox,4160,Even Deeper pockets,➤Even deeper pockets enabled`n  To use: Please purchase `"deeper pockets`" skill.
