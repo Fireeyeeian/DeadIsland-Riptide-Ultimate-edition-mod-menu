@@ -126,7 +126,7 @@ FileInstall, Required_files_and_scripts\scripts\background_music_riptide.exe, %A
 FileInstall, Required_files_and_scripts\scripts\play_scream_sound_then_quit_riptide.exe, %A_Temp%\@DIRUE_TEMPFILES\scripts\play_scream_sound_then_quit_riptide.exe,1
 FileInstall, Required_files_and_scripts\game.ini, %A_Temp%\@DIRUE_TEMPFILES\loose_files\game.ini , 1
 FileInstall, Required_files_and_scripts\menumain_pc.xui_version, %A_Temp%\@DIRUE_TEMPFILES\loose_files\menumain_pc.xui , 1
-FileInstall, Required_files_and_scripts\vessel_data.scr.oneshot_zombie, %A_Temp%\@DIRUE_TEMPFILES\loose_files\vessel_data.scr.oneshot_zombie , 1
+;FileInstall, Required_files_and_scripts\vessel_data.scr.oneshot_zombie, %A_Temp%\@DIRUE_TEMPFILES\loose_files\vessel_data.scr.oneshot_zombie , 1 ;unused?
 FileInstall, Required_files_and_scripts\ai_norm.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\ai_norm.zip,1
 FileInstall, Required_files_and_scripts\ai_hard.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\ai_hard.zip,1
 FileInstall, Required_files_and_scripts\ai_Headshot.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\ai_Headshot.zip,1
@@ -141,6 +141,8 @@ FileInstall, Required_files_and_scripts\force_butcher_spawn.zip, %A_Temp%\@DIRUE
 FileInstall, Required_files_and_scripts\Force_thug_spawn.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\Force_thug_spawn.zip,1
 FileInstall, Required_files_and_scripts\Force_suicide_spawn.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\Force_suicide_spawn.zip,1
 FileInstall, Required_files_and_scripts\Force_ram_spawn.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\Force_ram_spawn.zip,1
+FileInstall, Required_files_and_scripts\Force_bandits_spawn.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\Force_bandits_spawn.zip,1
+FileInstall, Required_files_and_scripts\Default_spawns.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\Default_spawns.zip,1
 FileInstall, Required_files_and_scripts\gameaudioeffects.scr.modded, %A_Temp%\@DIRUE_TEMPFILES\loose_files\gameaudioeffects.scr.modded , 1
 FileInstall, Required_files_and_scripts\gameaudioeffects.scr.nomod, %A_Temp%\@DIRUE_TEMPFILES\loose_files\gameaudioeffects.scr.nomod , 1
 FileInstall, UI\steps5_riptide.png, %A_Temp%\@DIRUE_TEMPFILES\steps5_riptide.png , 1
@@ -172,6 +174,9 @@ var_amb_scr=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambi
 var_weather=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\weather\weather.scr
 playerdi_pre=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\playerdi.pre
 aispawnbox_pre_def=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
+
+AI_Zombie_vessel=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\ai\zombie\vessel_data.scr
+
 play_click_sound_func(){
 SoundPlay, %A_Temp%\@DIRUE_TEMPFILES\sounds\menu_click.wav
 }
@@ -417,7 +422,7 @@ Gui, Show, x127 y87 h577 w1010, DeadIslandRiptideUltimateEdition_By_FireEyeEian
 ;Run,%A_Temp%\@overseer.ahk,,, ;fuck overseer all my homies use survival_extinguisher.exe
 Run,%A_Temp%\@survival_extinguisher_riptide.exe,,,
 Sleep, 1092 ;to sync up end of scream sound with click sound
-Goto, enable_music
+;Goto, enable_music ; remove this nigga
 Return
 
 GuiClose:
@@ -492,52 +497,7 @@ else
 	MsgBox, please make sure game is installed correctly!`n Currently missing: Data0.pak`n`nPlease Verify game files or reinstall game
 	return
 Data0_present:
-MsgBox,260,, Do you want to backup your Data0.pak`n`nThis isnt necessary as you can just verify game files through steam or reinstall the game to get a fresh Data0.pak`nBut if you want to have a local backup select (yes).
-IfMsgBox, Yes
-goto, setup_backup_loc
-IfMsgBox, no
 goto,SETUP_TEMPORARY_ENVIRONMENT
-return
-setup_backup_loc:
-SetWorkingDir %Deadisland_dir%/DIR
-;FormatTime, Current_date,, MMMdd_yyyy @ h.mm.s tt
-if FileExist("@DIRUE_BackUps")
-	goto, bkps_exist_already
-;YES THIS WAS ALSO HACKY BUT...if it works...
-else
-	Goto, bkp_now
-return
-
-
-bkps_exist_already:
-MsgBox,4,, Looks like the @DIRUE_BackUps folder already exists.`nThis will overwrite any backups in:`n %Deadisland_dir%/DIR/@DIRUE_BackUps `n`nDo you want to Continue?
-IfMsgBox, no
-goto,Cancel_bkp
-IfMsgBox, yes
-goto, bkp_now
-return
-bkp_now:
-FileCreateDir, %Deadisland_dir%/DIR/@DIRUE_BackUps
-;SetWorkingDir %Deadisland_dir%/DIR/@DIRUE_BackUps
-;FileCreateDir, %Current_date%
-;SetWorkingDir %Deadisland_dir%/DIR/@DIRUE_BackUps
-FileCopy, %Deadisland_dir%/DIR/data0.pak, %Deadisland_dir%/DIR/@DIRUE_BackUps,1
-SetWorkingDir %Deadisland_dir%/DIR/@DIRUE_BackUps
-if FileExist("Data0.pak")
-	goto, copy_successful
-;YES THIS WAS ALSO HACKY BUT...if it works...
-else
-	MsgBox,8240,ERROR?, you shouldnt be seeing this error...`nData pak failed to copy?? maybe restart application and try again. if issue persists contact developer..
-return
-
-copy_successful:
-SetWorkingDir %Deadisland_dir%/DIR
-MsgBox,4160,NOTICE,Data0.pak has been backed up to:`n %Deadisland_dir%\DIR\@DIRUE_BackUp `n`n If game fails to launch correctly:`n    Please either:`n`n 1)-Restore data0.pak from backup located in:`n%Deadisland_dir%\DI\@DIRUE_BackUp `n `n or`n`n 2)-Verify game files or reinstall game
-goto,SETUP_TEMPORARY_ENVIRONMENT
-
-Cancel_bkp:
-MsgBox backup canceled
-goto, SETUP_TEMPORARY_ENVIRONMENT
 return
 
 SETUP_TEMPORARY_ENVIRONMENT:
@@ -568,30 +528,6 @@ FileCopy, %A_Temp%\@DIRUE_TEMPFILES\loose_files\menumain_pc.xui, %A_Temp%\@DIRUE
 TF_ReplaceLine(DLC_shop,"12 ",12,"	ColorItem(""Melee_AxeUniversalGen"", 1, 4, 1)")
 ;MsgBox,4160,NOTICE,currently not implemented yet:`n`n➤add menu text version and such. for development
 MsgBox,4160,NOTICE,Please note:`nIt is highly recomended to start a new`nplaythrough (new character ) to use some of theses mods but it is not required
-;backp_loc = %Deadisland_dir%/DIR/@DIRUE_BackUps
-;func_check_backups_size();doesn't work when setup as a function for whatever reason (something to do with the variable not working)...
-
-;; I have no idea what so ever why the heck this doesn't work. really sucks because i want to make user backups easy.
-;FolderSize = 0
-;Loop, %backp_loc%\*.*, , 1
-;    FolderSize += %A_LoopFileSize%
-;    MsgBox %FolderSize%
-;    If (%FolderSize% > "166640424"){
-;Goto, bkp_Getting_big
-;    }
-;  else{
-;Goto, bkp_ok_sofar
-;  }
-;bkp_Getting_big:
-;MsgBox Size of %backp_loc% is %FolderSize% B. delete some?
-;Goto, bkp_check_done
-;return
-;bkp_ok_sofar:
-;MsgBox not big enough
-;goto, bkp_check_done
-;return
-
-;bkp_check_done:
 GuiControl, enable,confirm_fov
 GuiControl, enabled,DDL
 GuiControl, Disable,select_folder_button
@@ -734,6 +670,7 @@ SplashTextOff
 MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Bandits"",
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandUltimateEdition_By_FireEyeEian"))
+return
 submit_Thug_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
@@ -782,6 +719,7 @@ MsgBox, 4160, Zombie_difficulty, ➤Zombies set to Normal (default),
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
+
 submit_1hit_zom:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
@@ -789,11 +727,13 @@ SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nN
 FileRemoveDir, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\ai,1
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 SmartZip("loose_files\ai_Onehit.zip", "EXTRACTED_DATA0\data")
+;TF_ReplaceLine(AI_Zombie_vessel,"854",854,"ParamBool(""one_shot"", 1) //default value: 0 modified by FireEyeEian--")
 SplashTextOff
 MsgBox, 4160, Zombie_difficulty, ➤Zombies set to One-hit mode,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
+
 submit_hard_zom:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
@@ -806,6 +746,7 @@ MsgBox, 4160, Zombie_difficulty, ➤Zombies set to Hard (30`% increase to health
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
+
 submit_headshot_zom:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
@@ -818,6 +759,7 @@ MsgBox, 4160, Zombie_difficulty, ➤Zombies set to Headshot only mode,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
+
 Submit_zombies_size:
 play_click_sound_func()
 Gui, Submit, NoHide
@@ -1055,32 +997,8 @@ mergedatapak_steam:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 FileDelete, %Deadisland_dir%/DIR/data0.pak
 SetWorkingDir %Deadisland_dir%/DIR
-if FileExist("@DIRUE_BackUps")
-Goto, backup_folder_exists_yes
-else
-Goto, backup_folder_exists_NO
-return
-
-backup_folder_exists_NO:
-MsgBox this will overwrite your data0.pak in:`n %Deadisland_dir%\DIR\
 GOTO, write_mods_to_file
 return
-
-backup_folder_exists_yes:
-SetWorkingDir %Deadisland_dir%/DIR/@DIRUE_BackUps
-if FileExist("Data0.pak")
-Goto, backup_does_exist
-else
-Goto, ERROR_DATAPAKMISSING_FROM_BACKUP
-return
-ERROR_DATAPAKMISSING_FROM_BACKUP:
-MsgBox ERROR`, BACKUP MISSING FROM:`n%Deadisland_dir%\DIR\@DIRUE_BackUps`n`nThis is not a big deal as it only means that the @DIRUE_BackUps folder doesnt have a Data0.pak within it. Either there was an error copying the file or the user deleted the backup dat0.pak and kept the @DIRUE_BackUps folder.`nYou can always verify game files or reinstall them.`n`n>>THIS IS JUST A HEADS UP AND MODS WILL CONTIUE TO WRITE TO DATA PAK ALL FINE WITH NO ISSUES<<
-Goto, write_mods_to_file
-return
-
-backup_does_exist:
-MsgBox this will overwrite your data0.pak in:`n %Deadisland_dir%\DIR\ `n `n THERE IS A BACKUP OF YOUR ORIGINAL DATA0.PAK WITHIN: `n %Deadisland_dir%\DIR\@DIRUE_BackUps
-Goto, write_mods_to_file
 
 write_mods_to_file:
 FileCreateDir, %A_Temp%\@DIRUE_TEMPFILES\compiled_mod
