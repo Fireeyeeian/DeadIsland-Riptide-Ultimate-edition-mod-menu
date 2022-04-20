@@ -176,6 +176,42 @@ playerdi_pre=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\playerdi.pr
 aispawnbox_pre_def=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 
 AI_Zombie_vessel=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\ai\zombie\vessel_data.scr
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;functions;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+GetCurrentMonitorIndex(){
+	CoordMode, Mouse, Screen
+	MouseGetPos, mx, my
+	SysGet, monitorsCount, 80
+
+	Loop %monitorsCount%{
+		SysGet, monitor, Monitor, %A_Index%
+		if (monitorLeft <= mx && mx <= monitorRight && monitorTop <= my && my <= monitorBottom){
+			Return A_Index
+			}
+		}
+		Return 1
+}
+
+CoordXCenterScreen(WidthOfGUI,ScreenNumber)
+{
+SysGet, Mon1, Monitor, %ScreenNumber%
+	return (( Mon1Right-Mon1Left - WidthOfGUI ) / 2) + Mon1Left
+}
+
+CoordYCenterScreen(HeightofGUI,ScreenNumber)
+{
+SysGet, Mon1, Monitor, %ScreenNumber%
+	return (Mon1Bottom - 30 - HeightofGUI ) / 2
+}
+
+GetClientSize(hwnd, ByRef w, ByRef h)
+{
+    VarSetCapacity(rc, 16)
+    DllCall("GetClientRect", "uint", hwnd, "uint", &rc)
+    w := NumGet(rc, 8, "int")
+    h := NumGet(rc, 12, "int")
+}
 
 play_click_sound_func(){
 SoundPlay, %A_Temp%\@DIRUE_TEMPFILES\sounds\menu_click.wav
@@ -412,17 +448,33 @@ Gui, Font, CYellow
 ;;;;;;;;;;;;;;;;;;;;;;;;VERSION NUMBER;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 Gui, Add, Text, x750 y64 w100 h30 +BackgroundTrans,Version 0.5 ;REMEMBER TO UPDATE VERSION XML FOR MAIN MENU
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Generated using SmartGUI Creator 4.0
-Gui, Show, x127 y87 h581 w1014, New GUI Window
+;Gui, Show, x127 y87 h581 w1014, New GUI Window ;old method
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 DISABLE_BUTTONS_Function()
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-; Generated using SmartGUI Creator 4.0 ---> yes it was generated twice.. talk about inbreeding.
-Gui, Show, x127 y87 h577 w1010, DeadIslandRiptideUltimateEdition_By_FireEyeEian
+
+;Gui, Show, x127 y87 h577 w1010, DeadIslandRiptideUltimateEdition_By_FireEyeEian ;old method
+;---------GET CENTER OF CURRENT MONITOR---------
+	;get current monitor index
+	CurrentMonitorIndex:=GetCurrentMonitorIndex()
+	;get Hwnd of current GUI
+	DetectHiddenWindows On
+	Gui, +LastFound
+	Gui, Show, Hide
+	GUI_Hwnd := WinExist()
+	;Calculate size of GUI
+	GetClientSize(GUI_Hwnd,GUI_Width,GUI_Height)
+	DetectHiddenWindows Off
+	;Calculate where the GUI should be positioned
+	GUI_X:=CoordXCenterScreen(GUI_Width,CurrentMonitorIndex)
+	GUI_Y:=CoordYCenterScreen(GUI_Height,CurrentMonitorIndex)
+;------- / GET CENTER OF CURRENT MONITOR--------- 
+;SHOW GUI AT CENTER OF CURRENT SCREEN
+Gui, Show, % "x" GUI_X " y" GUI_Y, DeadIslandRiptideUltimateEdition_By_FireEyeEian
 ;Run,%A_Temp%\@overseer.ahk,,, ;fuck overseer all my homies use survival_extinguisher.exe
 Run,%A_Temp%\@survival_extinguisher_riptide.exe,,,
 Sleep, 1092 ;to sync up end of scream sound with click sound
-;Goto, enable_music ; remove this nigga
+;Goto, enable_music 
 Return
 
 GuiClose:
@@ -615,86 +667,95 @@ submit_norm_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
 SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
-FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Default_spawns.zip", "EXTRACTED_DATA0\data\presets")
 SplashTextOff
 MsgBox, 4160, ZOMBIE SIZE, ➤Zombies spawns set to Normal (default),
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
+
 submit_Butcher_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
 SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
-FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\force_butcher_spawn.zip", "EXTRACTED_DATA0\data\presets")
 SplashTextOff
-MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Butchers""`n(May god have mercy on you),
+MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Butchers""`n(May god have mercy on you) `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
+
 submit_Ram_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
 SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
-FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Force_ram_spawn.zip", "EXTRACTED_DATA0\data\presets")
 SplashTextOff
-MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Rammers"",
+MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Rammers"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
+
 submit_Bloater_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
 SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
-FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Force_bloater_spawn.zip", "EXTRACTED_DATA0\data\presets")
 SplashTextOff
-MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Bloaters"",
+MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Bloaters"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
+
 submit_bandit_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
 SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
-FileDelete, %A_Temp%\@DIUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
-SetWorkingDir %A_Temp%\@DIUE_TEMPFILES
+SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Force_bandits_spawn.zip", "EXTRACTED_DATA0\data\presets")
 SplashTextOff
-MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Bandits"",
+MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Bandits"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandUltimateEdition_By_FireEyeEian"))
 return
+
 submit_Thug_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
 SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
-FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Force_thug_spawn.zip", "EXTRACTED_DATA0\data\presets")
 SplashTextOff
-MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Thugs"",
+MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Thugs"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
+
 submit_suicide_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
 SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
-FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Force_suicide_spawn.zip", "EXTRACTED_DATA0\data\presets")
 SplashTextOff
-MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Suiciders"",
+MsgBox, 4160, ZOMBIE SIZE, ➤Spawn overide set to ""Suiciders""`nNote: They really like to explode...`nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
+
+
+
 Submit_zombies:
 play_click_sound_func()
 Gui, Submit, NoHide
@@ -3662,12 +3723,12 @@ noclip_truck_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
-TF_ReplaceLine(carDIRDE_phx,"77",77,"    Ignore(1) //Modified_by_FireEyeEian")
+TF_ReplaceLine(cardi_phx,"77",77,"    Ignore(1) //Modified_by_FireEyeEian")
 TF_ReplaceLine(cardi_phx,"91",91,"    Ignore(1) //Modified_by_FireEyeEian")
 ;TF_ReplaceLine(truckdi_phx,"73",73,"    Ignore(1) //Modified_by_FireEyeEian")
 ;TF_ReplaceLine(truckdi_phx,"87",87,"    Ignore(1) //Modified_by_FireEyeEian")
 SplashTextOff
-MsgBox,4160,Noclip trucks,➤Noclip trucks enabled. `nPlease note:`n 		The armored truck will not be affected because it will fall halfway through the ground after getting out of the hotel preventing you from getting inside.`n`nAlso note that the jeep will fall through the first bridge in the jungle.. You've been warned..
+MsgBox,4160,Noclip trucks,➤Noclip trucks enabled. `nPlease note:`n This is fun and working but not tested throughout the game.
 Enable_BUTTONS_Function()
 enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
