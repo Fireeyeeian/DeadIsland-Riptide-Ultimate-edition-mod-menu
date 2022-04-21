@@ -2136,36 +2136,36 @@ SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nN
 ;Fury_guns\\\\\\\\\\\\\\\\\\
 ;Fury revolver-----------------------------------------------------------------------///////colt\\\\\\\--------------------------------------------------------------------------------------------------
 ;handoffset
-TF_ReplaceLine(INV_spec,"265",265,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"369",369,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
 ;aimfov
-TF_ReplaceLine(INV_spec,"288",288,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"392",288,"        AimFov(1.05); //Modified_by_FireEyeEian")
 ;Fury m9-----------------------------------------------------------------------///////colt\\\\\\\--------------------------------------------------------------------------------------------------
 ;handoffset
-TF_ReplaceLine(INV_spec,"345",345,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"449",345,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian")
 ;aimfov
-TF_ReplaceLine(INV_spec,"369",369,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"473",369,"        AimFov(1.05); //Modified_by_FireEyeEian")
 ;shotguns\\\\\\\\\\\\\\\\\\\\
 ;leg_crowd
-TF_ReplaceLine(INV_GEN,"20678",20678,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20671",20671,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.010]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24884",24884,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24877",24877,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.010]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
 ;shorty
-TF_ReplaceLine(INV_GEN,"17297",17297,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"17310",17310,"        AimFov(1.1); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21392",21392,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21405",21405,"        AimFov(1.1); //Modified_by_FireEyeEian")
 ;shotgen
-TF_ReplaceLine(INV_GEN,"17479",17479,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21591",21591,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
 ;shot b_gen
-TF_ReplaceLine(INV_GEN,"17663",17663,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21779",21779,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
 ;shot c_gen
-TF_ReplaceLine(INV_GEN,"17847",17847,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21967",21967,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
 ;shot d_gen
-TF_ReplaceLine(INV_GEN,"18031",18031,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"18024",18024,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22155",22155,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22148",22148,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
 ;shot E_gen
-TF_ReplaceLine(INV_GEN,"18208",18208,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"18215",18215,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22336",22336,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22343",22343,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
 ;shot F_gen
-TF_ReplaceLine(INV_GEN,"18392",18392,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"18399",18399,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22524",22524,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22531",22531,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
 ;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ;Defender----------------------------------------------------------------------------------////////Defender\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix for hip fire hold
