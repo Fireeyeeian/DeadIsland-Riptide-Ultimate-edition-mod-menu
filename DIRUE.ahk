@@ -1125,6 +1125,7 @@ DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;;;colt_gen_upgrade_1
+TF_ReplaceLine(INV_GEN,"20504",20504,"        ShotTime(1.0); //Modified_by_FireEyeEian //BETTER_WEP_UPGRADES")
 TF_ReplaceLine(INV_GEN,"20596",20596,"        ShotTime(0.94); //Modified_by_FireEyeEian //BETTER_WEP_UPGRADES")
 TF_ReplaceLine(INV_GEN,"20597",20597,"        ReloadTime(3.8); //Modified_by_FireEyeEian //BETTER_WEP_UPGRADES")
 TF_ReplaceLine(INV_GEN,"20623",20623,"        ShootVertRecoil(0.0095); //Modified_by_FireEyeEian //BETTER_WEP_UPGRADES")
@@ -1394,6 +1395,7 @@ DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;;;colt_gen_upgrade_1
+TF_ReplaceLine(INV_GEN,"20504",20504,"        ShotTime(0.6); //this_is_the_default_value")
 TF_ReplaceLine(INV_GEN,"20596",20596,"        //placeholderforwepupgrades //Modified_by_FireEyeEian -----------")
 TF_ReplaceLine(INV_GEN,"20597",20597,"        //placeholderforwepupgrades //Modified_by_FireEyeEian -----------")
 TF_ReplaceLine(INV_GEN,"20623",20623,"        ShootVertRecoil(0.01); //this_is_the_default_value")
