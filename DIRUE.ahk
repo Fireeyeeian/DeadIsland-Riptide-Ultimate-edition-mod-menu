@@ -616,7 +616,7 @@ return
 NightTime_var_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(var_weather,"11",11," float time = TIME * 0.0; //Modified_by_FireEyeEian")
 TF_ReplaceLine(var_weather,"12",12," Set(""f_game_time"", (time - floor(time)) * 1.0); // time format hh.mmss h <00.0-23.0>, m <0.00-0.99>, s<0.0000-0.0099> //Modified_by_FireEyeEian")
 ;TF_ReplaceLine(var_amb_scd,"11",11,"VarFloat(""f_pp_lighting_indirect_factor"", 1.0)")
@@ -632,7 +632,7 @@ return
 NightTime_var_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(var_weather,"11",11," //float time = TIME * 0.0; //Modified_by_FireEyeEian //this_is_the_default_value")
 TF_ReplaceLine(var_weather,"12",12," //Set(""f_game_time"", (time - floor(time)) * 24.0); // time format hh.mmss h <00.0-23.0>, m <0.00-0.99>, s<0.0000-0.0099> //Modified_by_FireEyeEian //this_is_the_default_value")
 ;TF_ReplaceLine(var_amb_scd,"11",11,"VarFloat(""f_pp_lighting_indirect_factor"", 1.0)")
@@ -666,7 +666,7 @@ return
 submit_norm_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Default_spawns.zip", "EXTRACTED_DATA0\data\presets")
@@ -679,7 +679,7 @@ return
 submit_Butcher_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\force_butcher_spawn.zip", "EXTRACTED_DATA0\data\presets")
@@ -692,7 +692,7 @@ return
 submit_Ram_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Force_ram_spawn.zip", "EXTRACTED_DATA0\data\presets")
@@ -705,7 +705,7 @@ return
 submit_Bloater_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Force_bloater_spawn.zip", "EXTRACTED_DATA0\data\presets")
@@ -718,7 +718,7 @@ return
 submit_bandit_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Force_bandits_spawn.zip", "EXTRACTED_DATA0\data\presets")
@@ -731,7 +731,7 @@ return
 submit_Thug_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Force_thug_spawn.zip", "EXTRACTED_DATA0\data\presets")
@@ -744,7 +744,7 @@ return
 submit_suicide_zom_spawn:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\aispawnbox_pre.def
 SmartZip("loose_files\Force_suicide_spawn.zip", "EXTRACTED_DATA0\data\presets")
@@ -771,7 +771,7 @@ return
 submit_norm_zom:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 FileRemoveDir, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\ai,1
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 SmartZip("loose_files\ai_norm.zip", "EXTRACTED_DATA0\data")
@@ -784,7 +784,7 @@ return
 submit_1hit_zom:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 FileRemoveDir, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\ai,1
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 SmartZip("loose_files\ai_Onehit.zip", "EXTRACTED_DATA0\data")
@@ -798,7 +798,7 @@ return
 submit_hard_zom:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 FileRemoveDir, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\ai,1
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 SmartZip("loose_files\ai_hard.zip", "EXTRACTED_DATA0\data")
@@ -811,7 +811,7 @@ return
 submit_headshot_zom:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 FileRemoveDir, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\ai,1
 SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
 SmartZip("loose_files\ai_Headshot.zip", "EXTRACTED_DATA0\data")
@@ -838,7 +838,7 @@ return
 submit_NORMSIZEZOM:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\infectedai.pre
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\infectedai_pre.def
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\zombieai.pre
@@ -853,7 +853,7 @@ return
 submit_extrasmallzom:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\infectedai.pre
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\infectedai_pre.def
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\zombieai.pre
@@ -868,7 +868,7 @@ return
 submit_MIDGETZOM:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\infectedai.pre
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\infectedai_pre.def
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\zombieai.pre
@@ -883,7 +883,7 @@ return
 submit_LARGESIZEZOM:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\infectedai.pre
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\infectedai_pre.def
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\zombieai.pre
@@ -898,7 +898,7 @@ return
 submit_SUPASIZEZOM:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\infectedai.pre
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\infectedai_pre.def
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\presets\zombieai.pre
@@ -925,7 +925,7 @@ return
 fov_set_62:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"75",75,"	<prop n=""CameraDefaultFOV"" v=""62.5""/>	<!--  This is the default value //Modified_by_FireEyeEian-->")
 SplashTextOff
 MsgBox, 4160, FOV CHANGE, ➤FOV set to 62.5 (default),
@@ -936,7 +936,7 @@ return
 fov_set_72:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"75",75,"	<prop n=""CameraDefaultFOV"" v=""72""/>	<!--  Modified by FireEyeEian-->")
 SplashTextOff
 MsgBox, 4160, FOV CHANGE, ➤FOV changed to 72 (+10),
@@ -947,7 +947,7 @@ return
 fov_set_82:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"75",75,"	<prop n=""CameraDefaultFOV"" v=""82""/>	<!--  Modified by FireEyeEian-->")
 SplashTextOff
 MsgBox, 4160, FOV CHANGE, ➤FOV changed to 82 (+20),
@@ -967,7 +967,7 @@ goto, skip_intro_no
 skip_intro_yes:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_InsertPrefix(INTRO_MOV,15,25, "//")
 SplashTextOff
 MsgBox,4160,Intro vid option,➤Intro videos will be disabled,
@@ -977,7 +977,7 @@ return
 skip_intro_no:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceInLines(INTRO_MOV,"15,16,17,18,19,20,21,22,23,24,25","","//","")
 SplashTextOff
 MsgBox,4160,Intro vid option,➤Intro videos wll play,
@@ -996,7 +996,7 @@ goto, reduce_stamina_no
 reduce_stamina_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"214",214,"	<prop n=""MoveSprintStaminaConsumption"" v=""0.03""/>	<!--  Modified by FireEyeEian-->")
 SplashTextOff
 MsgBox,4160,Stamina option,➤Sprint stamina cost set to reduced (0.03)
@@ -1006,7 +1006,7 @@ return
 reduce_stamina_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"214",214,"	<prop n=""MoveSprintStaminaConsumption"" v=""0.05""/>	<!-- This is the default value //Modified_by_FireEyeEian-->")
 SplashTextOff
 MsgBox,4160,Stamina option,➤Sprint stamina cost set to default (0.05),
@@ -1025,7 +1025,7 @@ goto, reduce_sun_no
 reduce_sun_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(sunglow_scd,"4",4,"VarFloat(""f_pp_glow_factor"", 0.1)	//  Modified by FireEyeEian")
 TF_ReplaceLine(sunglow_scr,"1",1,"VarFloat(""f_glow_factor"", 0.1)	//  Modified by FireEyeEian")
 SplashTextOff
@@ -1036,7 +1036,7 @@ return
 reduce_sun_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(sunglow_scd,"4",4,"VarFloat(""f_pp_glow_factor"", 1.0)	// This is the default value //Modified_by_FireEyeEian")
 TF_ReplaceLine(sunglow_scr,"1",1,"VarFloat(""f_glow_factor"", 1.0)	// This is the default value //Modified_by_FireEyeEian")
 SplashTextOff
@@ -1075,7 +1075,7 @@ FileDelete, %A_Temp%\@DIRUE_TEMPFILES\compiled_mod\Data0.zip
 play_click_sound_func()
 SplashTextOff
 play_final_sound_func()
-MsgBox,Game has been modded and is ready to play`n(You can close this application)
+MsgBox,Game has been Patched and is ready to play`n(You can close this application)
 enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 ;Enable_BUTTONS_Function()
 return
@@ -1092,7 +1092,7 @@ return
 Bullet_pen_var_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"49",49,"    <prop n=""BulletPenetrationChance"" v=""0.98""/> <!-- Modified_by_FireEyeEian -->")
 SplashTextOff
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
@@ -1102,7 +1102,7 @@ return
 Bullet_pen_var_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"49",49,"    <prop n=""BulletPenetrationChance"" v=""0.""/> <!-- this_is_the_default_value (yeah i know)-->")
 SplashTextOff
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
@@ -1123,7 +1123,7 @@ return
 better_wep_upgrades_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;;;colt_gen_upgrade_1
 TF_ReplaceLine(INV_GEN,"20596",20596,"        ShotTime(0.94); //Modified_by_FireEyeEian")
 TF_ReplaceLine(INV_GEN,"20597",20597,"        ReloadTime(3.8); //Modified_by_FireEyeEian")
@@ -1392,7 +1392,7 @@ return
 better_wep_upgrades_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;;;colt_gen_upgrade_1
 TF_ReplaceLine(INV_GEN,"20596",20596,"        //placeholderforwepupgrades //Modified_by_FireEyeEian -----------")
 TF_ReplaceLine(INV_GEN,"20597",20597,"        //placeholderforwepupgrades //Modified_by_FireEyeEian -----------")
@@ -1673,7 +1673,7 @@ return
 Remove_reverb_sound_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\gameaudioeffects.scr
 FileCopy, %A_Temp%\@DIRUE_TEMPFILES\loose_files\gameaudioeffects.scr.modded , %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\gameaudioeffects.scr,1
 SplashTextOff
@@ -1685,7 +1685,7 @@ return
 Remove_reverb_sound_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\gameaudioeffects.scr
 FileCopy, %A_Temp%\@DIRUE_TEMPFILES\loose_files\gameaudioeffects.scr.nomod , %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\gameaudioeffects.scr,1
 SplashTextOff
@@ -1707,7 +1707,7 @@ return
 custom_wep_var_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;Defender-----------------------------////////Defender\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;better reload speed
 TF_ReplaceLine(INV_GEN,"20853",20853,"        ReloadTime(2.65);")
@@ -1868,7 +1868,7 @@ IfMsgBox, yes
     Goto, Add_beachBall_bomb_cust_wep
 return
 Add_beachBall_bomb_cust_wep:
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(inv_scr,"4899",4899,"        Mesh(""beach_ball_a.msh"");")
 goto,Continue_on_cust_wep
 return
@@ -1881,7 +1881,7 @@ IfMsgBox, yes
     Goto, Continue_on_cust_wep_final
     return
 Add_Cheat_ammo_no:
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(DLC_shop,"91",91,"	//Item(""Craftplan_HE_Rounds"", )")
 goto, Continue_on_cust_wep_final
 Continue_on_cust_wep_final:
@@ -1895,7 +1895,7 @@ return
 custom_wep_var_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;Defender-----------------------------////////Defender\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;better reload speed
 TF_ReplaceLine(INV_GEN,"20853",20853,"        ReloadTime(3.25);")
@@ -1988,7 +1988,7 @@ goto, more_ammo_var_no
 more_ammo_var_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"261",261,"	<prop n=""MaxAmmoPistol"" v=""200""/>")
 TF_ReplaceLine(Def_lev,"262",262,"	<prop n=""MaxAmmoRifle"" v=""150""/>")
 TF_ReplaceLine(Def_lev,"263",263,"	<prop n=""MaxAmmoShotgun"" v=""90""/>")
@@ -2019,7 +2019,7 @@ return
 more_ammo_var_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"261",261,"	<prop n=""MaxAmmoPistol"" v=""50""/>")
 TF_ReplaceLine(Def_lev,"262",262,"	<prop n=""MaxAmmoRifle"" v=""60""/>")
 TF_ReplaceLine(Def_lev,"263",263,"	<prop n=""MaxAmmoShotgun"" v=""20""/>")
@@ -2062,7 +2062,7 @@ goto, Even_Deeper_pockets_var_no
 Even_Deeper_pockets_var_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;logan
 TF_ReplaceLine(logan_skills,"170",170,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""152"" max_level=""3"" tier=""1"" desc_params=""6;12;18"">")
 TF_ReplaceLine(logan_skills,"172",172,"            <effect id=""InventorySize"" change=""6""/>")
@@ -2086,7 +2086,7 @@ return
 Even_Deeper_pockets_var_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;logan
 TF_ReplaceLine(logan_skills,"170",170,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""152"" max_level=""3"" tier=""1"" desc_params=""2;4;6"">")
 TF_ReplaceLine(logan_skills,"172",172,"            <effect id=""InventorySize"" change=""2""/>")
@@ -2131,7 +2131,7 @@ return
 
 betterweppov_62:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;---weapon positions 
 ;Fury_guns\\\\\\\\\\\\\\\\\\
 ;Fury revolver-----------------------------------------------------------------------///////colt\\\\\\\--------------------------------------------------------------------------------------------------
@@ -2429,7 +2429,7 @@ return
 
 betterweppov_72:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;---weapon positions
 ;Fury_guns\\\\\\\\\\\\\\\\\\
 ;Fury revolver-----------------------------------------------------------------------///////furycolt\\\\\\\--------------------------------------------------------------------------------------------------
@@ -2727,7 +2727,7 @@ return
 
 betterweppov_82:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;---weapon positions 
 ;Fury_guns\\\\\\\\\\\\\\\\\\
 ;Fury revolver-----------------------------------------------------------------------///////furycolt\\\\\\\--------------------------------------------------------------------------------------------------
@@ -3200,7 +3200,7 @@ return
 better_wep_pov_var_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;swayfix
 ;M9
 TF_ReplaceLine(INV_GEN,"21016",21016,"        SwayMaxAngle(0.02);  //this_is_the_default_value")
@@ -3555,7 +3555,7 @@ return
 improved_loot_yes:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;default chest
 TF_ReplaceLine(def_loot,"66",66,"		ColorWeight(Color_White, 55.0); //Modified_by_FireEyeEian")
 TF_ReplaceLine(def_loot,"67",67,"		ColorWeight(Color_Green, 32.0); //Modified_by_FireEyeEian")
@@ -3600,7 +3600,7 @@ return
 improved_loot_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;default chest
 TF_ReplaceLine(def_loot,"66",66,"		ColorWeight(Color_White, 91.0); //this_is_the_default_value")
 TF_ReplaceLine(def_loot,"67",67,"		ColorWeight(Color_Green, 7.0);  //this_is_the_default_value")
@@ -3655,7 +3655,7 @@ goto, noclip_truck_no
 noclip_truck_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(cardi_phx,"77",77,"    Ignore(1) //Modified_by_FireEyeEian")
 TF_ReplaceLine(cardi_phx,"91",91,"    Ignore(1) //Modified_by_FireEyeEian")
 ;TF_ReplaceLine(truckdi_phx,"73",73,"    Ignore(1) //Modified_by_FireEyeEian")
@@ -3668,7 +3668,7 @@ return
 noclip_truck_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(cardi_phx,"77",77,"    Ignore(0) //Modified_by_FireEyeEian")
 TF_ReplaceLine(cardi_phx,"91",91,"    Ignore(0) //Modified_by_FireEyeEian")
 ;TF_ReplaceLine(truckdi_phx,"73",73,"    Ignore(0) //Modified_by_FireEyeEian")
@@ -3691,7 +3691,7 @@ return
 Recoil_hfov_fix_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;shotguns
 TF_ReplaceLine(INV_GEN,"17303",17303,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
 TF_ReplaceLine(INV_GEN,"17485",17485,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
@@ -3733,7 +3733,7 @@ return
 Recoil_hfov_fix_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;shotguns
 TF_ReplaceLine(INV_GEN,"17303",17303,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
 TF_ReplaceLine(INV_GEN,"17485",17485,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
@@ -3772,7 +3772,7 @@ goto, reduce_jump_stamina_no
 reduce_jump_stamina_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"251",251,"	<prop n=""JumpStaminaCost"" v=""0.03""/>	<!--  Modified by FireEyeEian-->")
 SplashTextOff
 MsgBox,4160,Jump stamina option,➤Jump stamina cost set to 50`% (0.03)
@@ -3782,7 +3782,7 @@ return
 reduce_jump_stamina_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"251",251,"	<prop n=""JumpStaminaCost"" v=""0.06""/>	<!-- This is the default value //Modified_by_FireEyeEian-->")
 SplashTextOff
 MsgBox,4160,Jump stamina option,➤Jump stamina cost set to default (0.06),
@@ -3801,7 +3801,7 @@ goto, Run_WITH_WEP_no
 Run_WITH_WEP_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"77",77,"	<prop n=""HideWeaponsDuringSprint"" v=""0.0""/>	<!--  Modified by FireEyeEian-->")
 SplashTextOff
 MsgBox,4160,Run w/weps,➤Weapons will be shown when sprinting
@@ -3811,7 +3811,7 @@ return
 Run_WITH_WEP_no:
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"77",77,"	<prop n=""HideWeaponsDuringSprint"" v=""1.0""/>	<!-- This is the default value //Modified_by_FireEyeEian-->")
 SplashTextOff
 MsgBox,4160,Run w/weps,➤Weapons will be hidden when sprinting (vanilla),
@@ -3830,7 +3830,7 @@ goto, better_movement_no
 better_movement_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;Strafing will no longer slow you down increase by 1.2 (48%)
 TF_ReplaceLine(Def_lev,"212",212,"	<prop n=""MoveStrafeMaxSpeed"" v=""3.70""/>	    <!-- Converted //Modified_by_FireEyeEian-->")
 ;instant acceleration also increases acceleration by 2.0
@@ -3847,7 +3847,7 @@ return
 better_movement_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"212",212,"  <prop n=""MoveStrafeMaxSpeed"" v=""2.5""/>    <!-- Converted--> <!-- this_is_the_default_value-->")
 TF_ReplaceLine(Def_lev,"215",215,"	<prop n=""MoveAcceleration"" v=""7.0""/>  	    <!-- Converted--> <!-- this_is_the_default_value-->")
 TF_ReplaceLine(Def_lev,"216",216,"	<prop n=""MoveDeceleration"" v=""10.0""/>	    <!-- Converted--> <!-- this_is_the_default_value-->")
@@ -3872,7 +3872,7 @@ goto, better_durability_no
 better_durability_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"119",119,"    <prop n=""BluntWpnDurabilityLoss"" v=""-6.0""/>	<!--  Modified by FireEyeEian-->")
 TF_ReplaceLine(Def_lev,"128",128,"    <prop n=""CutWpnDurabilityLoss"" v=""-6.0""/>	<!--  Modified by FireEyeEian-->")
 TF_ReplaceLine(Def_lev,"138",138,"    <prop n=""RangedWpnDurabilityLoss"" v=""-6.0""/>	<!--  Modified by FireEyeEian-->")
@@ -3885,7 +3885,7 @@ return
 better_durability_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"119",119,"    <prop n=""BluntWpnDurabilityLoss"" v=""1.0""/>	")
 TF_ReplaceLine(Def_lev,"128",128,"    <prop n=""CutWpnDurabilityLoss"" v=""1.0""/>	")
 TF_ReplaceLine(Def_lev,"138",138,"    <prop n=""RangedWpnDurabilityLoss"" v=""0.1""/>	")
@@ -3909,7 +3909,7 @@ goto, Instant_breakdoor_no
 Instant_breakdoor_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"114",114,"	<prop n=""BreakDoorEffectivens"" v=""99""/>	<!--  Modified by FireEyeEian-->")
 SplashTextOff
 MsgBox,4160,Break door,➤breaking doors set to quick/easy,
@@ -3919,7 +3919,7 @@ return
 Instant_breakdoor_no:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Writing to file,Please wait.... `n writing to files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"114",114,"	<prop n=""BreakDoorEffectivens"" v=""0""/>	")
 SplashTextOff
 MsgBox,4160,Break doors,➤breaking doors set to vanilla,
