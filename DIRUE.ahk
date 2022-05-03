@@ -927,6 +927,22 @@ DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"75",75,"	<prop n=""CameraDefaultFOV"" v=""62.5""/>	<!--  This is the default value //Modified_by_FireEyeEian-->")
+;shotguns_recoilfov_fix
+	;TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
+	;TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
+	;TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
+	;TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
+	;TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
+	;TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
+	;TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
+	;TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
+;pistols-recoilfov_fix
+;deag_hipfire_recoilfov_fix
+	;TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+;m9_hipfire_recoilfov_fix
+	;TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+;mcalls_hipfire_recoilfov_fix
+	;TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
 SplashTextOff
 MsgBox, 4160, FOV CHANGE, ➤FOV set to 62.5 (default),
 Enable_BUTTONS_Function()
@@ -938,6 +954,62 @@ DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"75",75,"	<prop n=""CameraDefaultFOV"" v=""72""/>	<!--  Modified by FireEyeEian-->")
+;shotguns_recoilfov_fix
+	;Shotgun_shortgen
+	TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21452",21452,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21484",21484,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21516",21516,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21548",21548,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_gen
+	TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21651",21651,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21680",21680,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21709",21709,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21738",21738,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_bgen
+	TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21839",21839,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21868",21868,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21897",21897,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21926",21926,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_cgen
+	TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22027",22027,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22056",22056,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22085",22085,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22114",22114,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_dGen
+	TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22215",22215,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22244",22244,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22273",22273,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22302",22302,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_EGen
+	TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22403",22403,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22432",22432,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22461",22461,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22490",22490,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_FGen
+	TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22591",22591,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22620",22620,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22649",22649,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22678",22678,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;leg_crowd_pleaser
+	TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"24943",24943,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"24974",24974,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"25005",25005,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"25036",25036,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+;pistols-recoilfov_fix
+;deag_hipfire_recoilfov_fix
+	;TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+;m9_hipfire_recoilfov_fix
+	;TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+;mcalls_hipfire_recoilfov_fix
+	;TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
 SplashTextOff
 MsgBox, 4160, FOV CHANGE, ➤FOV changed to 72 (+10),
 Enable_BUTTONS_Function()
@@ -949,11 +1021,68 @@ DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"75",75,"	<prop n=""CameraDefaultFOV"" v=""82""/>	<!--  Modified by FireEyeEian-->")
+;shotguns_recoilfov_fix
+	;Shotgun_shortgen
+	TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21452",21452,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21484",21484,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21516",21516,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21548",21548,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_gen
+	TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21651",21651,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21680",21680,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21709",21709,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21738",21738,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_bgen
+	TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21839",21839,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21868",21868,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21897",21897,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21926",21926,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_cgen
+	TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22027",22027,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22056",22056,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22085",22085,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22114",22114,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_dGen
+	TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22215",22215,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22244",22244,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22273",22273,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22302",22302,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_EGen
+	TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22403",22403,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22432",22432,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22461",22461,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22490",22490,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;Shotgun_FGen
+	TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22591",22591,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22620",22620,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22649",22649,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"22678",22678,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	;leg_crowd_pleaser
+	TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"24943",24943,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"24974",24974,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"25005",25005,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"25036",25036,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+;pistols-recoilfov_fix
+;deag_hipfire_recoilfov_fix
+	;TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+;m9_hipfire_recoilfov_fix
+	;TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+;mcalls_hipfire_recoilfov_fix
+	;TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
 SplashTextOff
 MsgBox, 4160, FOV CHANGE, ➤FOV changed to 82 (+20),
 Enable_BUTTONS_Function()
 enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
+
 
 
 skiptheintros:
@@ -3188,12 +3317,6 @@ Goto, weppovfinal_82
 return
 
 
-
-
-
-
-
-
 ;--------------------------------------------------set to NO -----\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////////////////////////////////////////////////////////
 ;--------------------------------------------------set to NO -----\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////////////////////////////////////////////////////////
 ;--------------------------------------------------set to NO -----\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\/////////////////////////////////////////////////////////////////////////////////
@@ -3694,22 +3817,22 @@ Recoil_hfov_fix_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
-;shotguns
-TF_ReplaceLine(INV_GEN,"17303",17303,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"17485",17485,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"17669",17669,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"17853",17853,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"18037",18037,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"18221",18221,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"18405",18405,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20684",20684,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-;pistols
-;deag_hipfire
-TF_ReplaceLine(INV_GEN,"17095",17095,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
-;m9_hipfire
-TF_ReplaceLine(INV_GEN,"16884",16884,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
-;mcalls_hipfire
-TF_ReplaceLine(INV_GEN,"20474",20474,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+;shotguns_recoilfov_fix
+TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
+;pistols-recoilfov_fix
+;deag_hipfire_recoilfov_fix
+TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+;m9_hipfire_recoilfov_fix
+TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+;mcalls_hipfire_recoilfov_fix
+TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
 gui,Submit,nohide
 GuiControlGet,better_wep_pov_var
 IfEqual, better_wep_pov_var, 1
@@ -3718,8 +3841,8 @@ IfEqual,better_wep_pov_var,0
 goto, better_wep_pov_var_isoff
 
 better_wep_pov_var_ison:
-;deag_aim_recoil_fix
-TF_ReplaceLine(INV_GEN,"17099",17099,"        ShootRecoilTime(0.15); //Modified_by_FireEyeEian")
+;deag_aim_recoil_fix_recoilfov_fix
+TF_ReplaceLine(INV_GEN,"21187",21187,"        ShootRecoilTime(0.15); //Modified_by_FireEyeEian")
 Goto, complete_hfov_enabled
 ;magnum_aim_recoil is ok enough
 better_wep_pov_var_isoff:
@@ -3737,23 +3860,23 @@ DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;shotguns
-TF_ReplaceLine(INV_GEN,"17303",17303,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"17485",17485,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"17669",17669,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"17853",17853,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"18037",18037,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"18221",18221,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"18405",18405,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20684",20684,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
 ;pistols
 ;deag_hipfire
-TF_ReplaceLine(INV_GEN,"17095",17095,"        ShootVertRecoil(0.025); //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.025); //this_is_the_default_value //Modified_by_FireEyeEian")
 ;m9_hipfire
-TF_ReplaceLine(INV_GEN,"16884",16884,"        ShootVertRecoil(0.025); //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.025); //this_is_the_default_value //Modified_by_FireEyeEian")
 ;mcalls_hipfire
-TF_ReplaceLine(INV_GEN,"20474",20474,"        ShootVertRecoil(0.025); //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.025); //this_is_the_default_value //Modified_by_FireEyeEian")
 ;wep_pov_fix_def_value
-TF_ReplaceLine(INV_GEN,"17099",17099,"        ShootRecoilTime(0.2); //this_is_the_default_value //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21187",21187,"        ShootRecoilTime(0.2); //this_is_the_default_value //Modified_by_FireEyeEian")
 Goto, complete_hfov_Disabled
 
 complete_hfov_Disabled:
