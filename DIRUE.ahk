@@ -364,9 +364,9 @@ Gui, Add, CheckBox, Checked x862 y130 w120 h27 venable_music_var genable_music, 
 GuiControlGet, MUSIC_HWND, Hwnd, enable_music_var
 AddTooltip(MUSIC_HWND,"toggles the playing of dead island music while running this application")
 
-Gui, Add, CheckBox, x15 y524 w190 h30 vRecoil_hfov_fix gRecoil_hfov_fix,high fov recoil fix
-GuiControlGet, HFOV_HWND, Hwnd, Recoil_hfov_fix
-AddTooltip(HFOV_HWND,"Reduces recoil animations for`n•Shotguns`nThis option can help if you get motion sick easily or have a high field of view")
+;Gui, Add, CheckBox, x15 y524 w190 h30 vRecoil_hfov_fix gRecoil_hfov_fix,high fov recoil fix
+;GuiControlGet, HFOV_HWND, Hwnd, Recoil_hfov_fix
+;AddTooltip(HFOV_HWND,"Reduces recoil animations for`n•Shotguns`nThis option can help if you get motion sick easily or have a high field of view")
 
 Gui, Add, CheckBox, x210 y524 w190 h30 vJump_stamina_var greducejumpstaminacost,Reduce jump stamina cost
 GuiControlGet, JUMP_STAM_HWND, Hwnd, Jump_stamina_var
@@ -396,9 +396,9 @@ Gui, Add, CheckBox, x405 y489 w190 h30 vbetter_wep_upgrades_var gbetter_wep_upgr
 GuiControlGet, WEP_UPGRADES_HWND, Hwnd, better_wep_upgrades_var
 AddTooltip(WEP_UPGRADES_HWND,"Adds more functionality to the (firearms) weapon upgrade system.`nFirearms stats such as:`n•Reload speed`n•How fast it will fire`n•Recoil impulse`nWill get better with every upgrade you apply to the firearm.`n`nPLEASE NOTE: ONLY THE AUTOMATIC RELOAD SPEED IS AFFECTED (this is due to how dead island handles weapons generation its kinda out of my hands.`nJust know that the reload speed will be default if you hit the reload key manually) ")
 
-Gui, Add, CheckBox, x600 y524 w190 h30 vNightTime_var gnightTIME ,Night-time paradise
-GuiControlGet, NIGHT_HWND, Hwnd, NightTime_var
-AddTooltip(NIGHT_HWND,"Originally part of my ""Night-time paradise"" mod`n•Sets game time to night`nPLEASE NOTE: As of now I have been unsuccessful in making the flashlight infinite as well as being able to make the truck headlights work`nAlso night time can be extremely dark in jungle/laboratories areas")
+;Gui, Add, CheckBox, x600 y524 w190 h30 vNightTime_var gnightTIME ,Night-time paradise
+;GuiControlGet, NIGHT_HWND, Hwnd, NightTime_var
+;AddTooltip(NIGHT_HWND,"Originally part of my ""Night-time paradise"" mod`n•Sets game time to night`nPLEASE NOTE: As of now I have been unsuccessful in making the flashlight infinite as well as being able to make the truck headlights work`nAlso night time can be extremely dark in jungle/laboratories areas")
 
 Gui, Font, S8 BOLD Cblack , Segoe ui
 
@@ -4210,12 +4210,12 @@ better_durability_yes:
 DISABLE_BUTTONS_Function()
 DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
-TF_ReplaceLine(Def_lev,"119",119,"    <prop n=""BluntWpnDurabilityLoss"" v=""-6.0""/>	<!--  Modified by FireEyeEian-->")
-TF_ReplaceLine(Def_lev,"128",128,"    <prop n=""CutWpnDurabilityLoss"" v=""-6.0""/>	<!--  Modified by FireEyeEian-->")
-TF_ReplaceLine(Def_lev,"138",138,"    <prop n=""RangedWpnDurabilityLoss"" v=""-6.0""/>	<!--  Modified by FireEyeEian-->")
-TF_ReplaceLine(Def_lev,"148",148,"    <prop n=""BulletWpnDurabilityLoss"" v=""-6.0""/>	<!--  Modified by FireEyeEian-->")
+TF_ReplaceLine(Def_lev,"119",119,"    <prop n=""BluntWpnDurabilityLoss"" v=""-9.0""/>	<!--  Modified by FireEyeEian-->")
+TF_ReplaceLine(Def_lev,"128",128,"    <prop n=""CutWpnDurabilityLoss"" v=""-9.0""/>	<!--  Modified by FireEyeEian-->")
+TF_ReplaceLine(Def_lev,"138",138,"    <prop n=""RangedWpnDurabilityLoss"" v=""-9.0""/>	<!--  Modified by FireEyeEian-->")
+TF_ReplaceLine(Def_lev,"148",148,"    <prop n=""BulletWpnDurabilityLoss"" v=""-9.0""/>	<!--  Modified by FireEyeEian-->")
 SplashTextOff
-MsgBox,4160,Wep durability,➤Weapons deteriorate at a slower rate`nChanged from 1.0 durability loss to -6.0,
+MsgBox,4160,Wep durability,➤Weapons deteriorate at a slower rate`nChanged from 1.0 durability loss to -9.0,
 Enable_BUTTONS_Function()
 enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
