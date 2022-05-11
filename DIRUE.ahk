@@ -152,6 +152,20 @@ FileInstall, Required_files_and_scripts\sounds\DIR_music.wav, %A_Temp%\@DIRUE_TE
 FileInstall, Required_files_and_scripts\sounds\menu_highlight.wav, %A_Temp%\@DIRUE_TEMPFILES\sounds\menu_highlight.wav,1
 FileInstall, Required_files_and_scripts\sounds\scream_final.wav, %A_Temp%\@DIRUE_TEMPFILES\sounds\scream_final.wav,1
 FileInstall, Required_files_and_scripts\sounds\napalm.wav, %A_Temp%\@DIRUE_TEMPFILES\sounds\napalm.wav,1
+FileInstall, Required_files_and_scripts\Time-weather_vanilla.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\Time-weather_vanilla.zip,1
+FileInstall, Required_files_and_scripts\time-weather_Just_night.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\time-weather_Just_night.zip,1
+FileInstall, Required_files_and_scripts\time-weather_Just_night_darker.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\time-weather_Just_night_darker.zip,1
+FileInstall, Required_files_and_scripts\time-weather_Rain_night.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\time-weather_Rain_night.zip,1
+FileInstall, Required_files_and_scripts\time-weather_Rain_day.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\time-weather_Rain_day.zip,1
+FileInstall, Required_files_and_scripts\time-weather_Rain_night_darker.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\time-weather_Rain_night_darker.zip,1
+FileInstall, Required_files_and_scripts\time-weather_storm_day.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\time-weather_storm_day.zip,1
+FileInstall, Required_files_and_scripts\time-weather_storm_night.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\time-weather_storm_night.zip,1
+FileInstall, Required_files_and_scripts\time-weather_storm_night_darker.zip, %A_Temp%\@DIRUE_TEMPFILES\loose_files\time-weather_storm_night_darker.zip,1
+
+
+
+
+
 Run, %A_Temp%\@DIRUE_TEMPFILES\scripts\play_scream_sound_then_quit_riptide.exe,,,
 INV_GEN=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\inventory_gen.scr
 INV_spec=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\inventory_special.scr
@@ -264,8 +278,13 @@ GuiControl,Disable,Zombie_spawn_var
 GuiControl,Disable,confirm_zom_spawn_var
 GuiControl,Disable,better_durability_var
 GuiControl,Disable,Instant_breakdoor_var
+GuiControl,Disable,Weather_Override_var
+GuiControl,Disable,confirm_Weather_var
+
 }
 Enable_BUTTONS_Function(){
+GuiControl,Enabled,Weather_Override_var
+GuiControl,Enabled,confirm_Weather_var
 GuiControl,enabled,NightTime_var
 GuiControl,Enabled,Zombie_spawn_var
 GuiControl,Enabled,confirm_zom_spawn_var
@@ -419,6 +438,12 @@ GuiControlGet, ZOM_size_HWND, Hwnd, Zombie_size_var
 AddTooltip(ZOM_size_HWND,"Select zombie size")
 Gui, Add, button, x670 y372 w90 h21 vconfirm_zom_size_var gSubmit_zombies_size,Confirm size
 
+weather_Override_list:="Default(vanilla)||just night|Rain(day)|Rain(night)|Storm(day)|Storm(night)|Just night(Darker)|Rain(Darker night)|Storm(Darker night)"
+Gui, Add, DropDownList, x22 y345 w170 h200 vWeather_Override_var, % weather_Override_list
+GuiControlGet, Weather_Override_HWND, Hwnd, Weather_Override_var
+AddTooltip(Weather_overide_HWND,"Override weather/time")
+Gui, Add, button, x195 y345 w120 h21 vconfirm_Weather_var gSubmit_Weather,set weather/time
+
 zom_list:="Normal zombies||One hit kill zombies|hard zombies|Headshot only zombies|"
 Gui, Add, DropDownList, x180 y372 w170 h200 vZombie_tweaks_var, % zom_list
 GuiControlGet, ZOM_HWND, Hwnd, Zombie_tweaks_var
@@ -434,15 +459,15 @@ Gui, Font, S13 BOLD cwhite, Segoe ui
 Gui, Add, Text, x22 y165 w950 h59 +BackgroundTrans, -Tip: hover mouse over options to get more info
 Gui, Font, CYellow,
 Gui, Font, S16 Cwhite Bold Underline, Segoe ui
-Gui, Add, Text, x22 y185 w870 h30 +BackgroundTrans, 1.  Please verify the game files/preform a clean install of "DeadIsland Riptide Definitive Edition"
+Gui, Add, Text, x22 y185 w870 h30 +BackgroundTrans, 1. Please verify the game files/preform a clean install of "DeadIsland Riptide Definitive Edition"
 Gui, Add, Text, x22 y225 w590 h30 +BackgroundTrans, 2. Please select the location that your game is installed to>
 Gui, Add, Text, x22 y260 w240 h30 +BackgroundTrans, 3. Select preferred FOV:
 Gui, Font, S10 BOLD Normal Cblack , Segoe ui
 Gui, Font, S12 BOLD Cwhite , Segoe ui
-Gui, Add, Text, x25 y290 w1000 h90 +BackgroundTrans, -Please note: Theoretically at a higher fov than 62 some weapon clipping might be visible. Also some recoil looks exagerated.`nI recommend enabling "high fov recoil fix" if you select a FOV higher than 62.
+Gui, Add, Text, x25 y290 w1000 h90 +BackgroundTrans, -Please note: At a higher fov than 62 some weapon clipping might occur.
 Gui, Font, S20 Cyellow Bold Underline, Segoe ui
 Gui, Font, S24 CRed Bold Underline, Segoe ui
-Gui, Add, Text, x22 y326 w950 h50 +BackgroundTrans, 4. Select which modifications you would like to install below:
+Gui, Add, Text, x22 y300 w950 h50 +BackgroundTrans, 4. Select which modifications you would like to install below:
 Gui, Font, S10 BOLD Normal Cblack , Segoe ui
 Gui, Font, CYellow
 ;;;;;;;;;;;;;;;;;;;;;;;;VERSION NUMBER;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -644,6 +669,186 @@ EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 MsgBox,4160,Night time?,➤Night time DISABLED
 Enable_BUTTONS_Function()
 return
+
+
+Submit_Weather:
+play_click_sound_func()
+Gui, Submit, NoHide
+If (weather_override_var = "Default(vanilla)")
+	Goto,submit_Vanilla_weather
+
+If (weather_override_var = "just night")
+	Goto,submit_just_night_weather
+
+If (weather_override_var = "Rain(day)")
+	Goto,submit_Rain_day_weather
+
+If (weather_override_var = "Rain(night)")
+	Goto,submit_Rain_night_weather
+
+If (weather_override_var = "Storm(day)")
+	Goto,submit_Storm_day_weather
+
+If (weather_override_var = "Storm(night)")
+	Goto,submit_Storm_night_weather
+
+If (weather_override_var = "Just night(Darker)")
+	Goto,submit_Just_night_Darker_weather
+
+If (weather_override_var = "Rain(Darker night)")
+	Goto,submit_Rain_darker_weather
+
+If (weather_override_var = "Storm(Darker night)")
+	Goto,submit_storm_Darker_weather
+return
+
+
+submit_Vanilla_weather:
+DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+DISABLE_BUTTONS_Function()
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\weather\weather.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scd
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
+SmartZip("loose_files\Time-weather_vanilla.zip", "EXTRACTED_DATA0\data")
+SplashTextOff
+MsgBox, 4160, timeweather, ➤Weather set to vanilla (default),
+Enable_BUTTONS_Function()
+EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+return
+
+submit_just_night_weather:
+DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+DISABLE_BUTTONS_Function()
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\weather\weather.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scd
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
+SmartZip("loose_files\time-weather_Just_night.zip", "EXTRACTED_DATA0\data")
+SplashTextOff
+MsgBox, 4160, timeweather, ➤Spawn overide set to ""Butchers""`n(May god have mercy on you) `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+Enable_BUTTONS_Function()
+EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+return
+
+submit_Rain_day_weather:
+DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+DISABLE_BUTTONS_Function()
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\weather\weather.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scd
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
+SmartZip("loose_files\time-weather_Rain_day.zip", "EXTRACTED_DATA0\data")
+SplashTextOff
+MsgBox, 4160, timeweather, ➤Spawn overide set to ""Rammers"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+Enable_BUTTONS_Function()
+EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+return
+
+submit_Rain_night_weather:
+DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+DISABLE_BUTTONS_Function()
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\weather\weather.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scd
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
+SmartZip("loose_files\time-weather_Rain_night.zip", "EXTRACTED_DATA0\data")
+SplashTextOff
+MsgBox, 4160, timeweather, ➤Spawn overide set to ""Bloaters"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+Enable_BUTTONS_Function()
+EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+return
+
+submit_Storm_day_weather:
+DisableCloseButton(WinExist("DeadIslandUltimateEdition_By_FireEyeEian"))
+DISABLE_BUTTONS_Function()
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\weather\weather.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scd
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
+SmartZip("loose_files\time-weather_storm_day.zip", "EXTRACTED_DATA0\data")
+SplashTextOff
+MsgBox, 4160, timeweather, ➤Spawn overide set to ""Bandits"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+Enable_BUTTONS_Function()
+EnableCloseButton(WinExist("DeadIslandUltimateEdition_By_FireEyeEian"))
+return
+
+submit_Storm_night_weather:
+DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+DISABLE_BUTTONS_Function()
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\weather\weather.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scd
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
+SmartZip("loose_files\time-weather_storm_night.zip", "EXTRACTED_DATA0\data")
+SplashTextOff
+MsgBox, 4160, timeweather, ➤Spawn overide set to ""Thugs"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+Enable_BUTTONS_Function()
+EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+return
+
+submit_Just_night_Darker_weather:
+DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+DISABLE_BUTTONS_Function()
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\weather\weather.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scd
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
+SmartZip("loose_files\time-weather_Just_night_darker.zip", "EXTRACTED_DATA0\data")
+SplashTextOff
+MsgBox, 4160, timeweather, ➤Spawn overide set to ""Suiciders""`nNote: They really like to explode...`nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+Enable_BUTTONS_Function()
+EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+return
+
+submit_Rain_darker_weather:
+DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+DISABLE_BUTTONS_Function()
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\weather\weather.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scd
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
+SmartZip("loose_files\time-weather_Rain_night_darker.zip", "EXTRACTED_DATA0\data")
+SplashTextOff
+MsgBox, 4160, timeweather, ➤Zombies spawns set to Normal (default),
+Enable_BUTTONS_Function()
+EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+return
+
+submit_storm_Darker_weather:
+DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+DISABLE_BUTTONS_Function()
+SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application`n       (EXTRACTING: AI folder contents)
+SetWorkingDir %A_Temp%\@DIRUE_TEMPFILES
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\weather\weather.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scd
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambient.scr
+FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
+SmartZip("loose_files\time-weather_storm_night_darker.zip", "EXTRACTED_DATA0\data")
+SplashTextOff
+MsgBox, 4160, timeweather, ➤Zombies spawns set to Normal (default),
+Enable_BUTTONS_Function()
+EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+return
+
+
+
 Submit_zombies_spawn:
 play_click_sound_func()
 Gui, Submit, NoHide
@@ -927,24 +1132,8 @@ DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 DISABLE_BUTTONS_Function()
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 TF_ReplaceLine(Def_lev,"75",75,"	<prop n=""CameraDefaultFOV"" v=""62.5""/>	<!--  This is the default value //Modified_by_FireEyeEian-->")
-;shotguns_recoilfov_fix
-	;TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
-	;TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
-	;TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
-	;TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
-	;TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
-	;TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
-	;TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
-	;TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.08);       //Modified_by_FireEyeEian")
-;pistols-recoilfov_fix
-;deag_hipfire_recoilfov_fix
-	;TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
-;m9_hipfire_recoilfov_fix
-	;TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
-;mcalls_hipfire_recoilfov_fix
-	;TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
 SplashTextOff
-MsgBox, 4160, FOV CHANGE, ➤FOV set to 62.5 (default),
+MsgBox, 4160, FOV CHANGE, ➤FOV set to 62.5 (default)`n`nPlease note: I highly recomended enabling "Better weapon POV" as it fixes bugs with firearms,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
@@ -1005,13 +1194,23 @@ TF_ReplaceLine(Def_lev,"75",75,"	<prop n=""CameraDefaultFOV"" v=""72""/>	<!--  M
 		TF_ReplaceLine(INV_GEN,"25036",25036,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
 ;pistols-recoilfov_fix
 ;deag_hipfire_recoilfov_fix
-	;TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21238",21238,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21275",21275,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21312",21312,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21349",21349,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
+;MAG_hipfire_recoilfov_fix
+	TF_ReplaceLine(INV_GEN,"20747",20747,"        ShootVertRecoil(0.017); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21238",21238,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21275",21275,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21312",21312,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21349",21349,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian")
 ;m9_hipfire_recoilfov_fix
-	;TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
 ;mcalls_hipfire_recoilfov_fix
-	;TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
 SplashTextOff
-MsgBox, 4160, FOV CHANGE, ➤FOV changed to 72 (+10),
+MsgBox, 4160, FOV CHANGE, ➤FOV changed to 72 (+10)`n➤Pistol & shotgun Recoil scaled to fov`n`nPlease note: as fov increases so does bullet spread when hip-firing.`nAlso I highly recomended enabling "Better weapon POV" as it fixes clipping and other issues when at a higher fov and in general.,
 Enable_BUTTONS_Function()
 enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
@@ -1072,13 +1271,25 @@ TF_ReplaceLine(Def_lev,"75",75,"	<prop n=""CameraDefaultFOV"" v=""82""/>	<!--  M
 		TF_ReplaceLine(INV_GEN,"25036",25036,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
 ;pistols-recoilfov_fix
 ;deag_hipfire_recoilfov_fix
-	;TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.008); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21238",21238,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21275",21275,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21312",21312,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21349",21349,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian")
+;MAG_hipfire_recoilfov_fix
+	TF_ReplaceLine(INV_GEN,"20747",20747,"        ShootVertRecoil(0.010); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21238",21238,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21275",21275,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21312",21312,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
+		TF_ReplaceLine(INV_GEN,"21349",21349,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
 ;m9_hipfire_recoilfov_fix
-	;TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
 ;mcalls_hipfire_recoilfov_fix
-	;TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+;colt_hipfire_recoilfov_fix
+	TF_ReplaceLine(INV_GEN,"20528",20528,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
 SplashTextOff
-MsgBox, 4160, FOV CHANGE, ➤FOV changed to 82 (+20),
+MsgBox, 4160, FOV CHANGE, ➤FOV changed to 82 (+20)`n➤Pistol & shotgun Recoil scaled to fov`n`nPlease note: as fov increases so does bullet spread when hip-firing.`nAlso I highly recomended enabling "Better weapon POV" as it fixes clipping and other issues when at a higher fov and in general.,
 Enable_BUTTONS_Function()
 enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
@@ -1173,6 +1384,7 @@ MsgBox,4160,sunflare option,➤Set sunflare to default (100`%)
 enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 Enable_BUTTONS_Function()
 return
+
 
 Submit_FINAL:
 play_click_sound_func()
