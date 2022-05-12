@@ -180,6 +180,7 @@ Logan_skills=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\skills\logan_skills
 Purna_skills=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\skills\purna_skills.xml
 Samb_skills=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\skills\samb_skills.xml
 Xian_skills=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\skills\xian_skills.xml
+John_skills=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\skills\john_skills.xml
 cardi_phx=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\odephysics\vehicle\cardi.phx
 truckdi_phx=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\odephysics\vehicle\truckdi.phx
 inv_scr=!%A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\inventory.scr
@@ -1145,72 +1146,72 @@ SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE
 TF_ReplaceLine(Def_lev,"75",75,"	<prop n=""CameraDefaultFOV"" v=""72""/>	<!--  Modified by FireEyeEian-->")
 ;shotguns_recoilfov_fix
 	;Shotgun_shortgen
-	TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21452",21452,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21484",21484,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21516",21516,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21548",21548,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21452",21452,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21484",21484,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21516",21516,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21548",21548,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_gen
-	TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21651",21651,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21680",21680,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21709",21709,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21738",21738,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21651",21651,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21680",21680,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21709",21709,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21738",21738,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_bgen
-	TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21839",21839,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21868",21868,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21897",21897,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21926",21926,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21839",21839,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21868",21868,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21897",21897,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21926",21926,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_cgen
-	TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22027",22027,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22056",22056,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22085",22085,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22114",22114,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22027",22027,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22056",22056,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22085",22085,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22114",22114,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_dGen
-	TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22215",22215,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22244",22244,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22273",22273,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22302",22302,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22215",22215,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22244",22244,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22273",22273,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22302",22302,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_EGen
-	TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22403",22403,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22432",22432,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22461",22461,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22490",22490,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22403",22403,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22432",22432,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22461",22461,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22490",22490,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_FGen
-	TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22591",22591,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22620",22620,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22649",22649,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22678",22678,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22591",22591,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22620",22620,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22649",22649,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22678",22678,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;leg_crowd_pleaser
-	TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"24943",24943,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"24974",24974,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"25005",25005,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"25036",25036,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.06);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"24943",24943,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"24974",24974,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"25005",25005,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"25036",25036,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 ;pistols-recoilfov_fix
 ;deag_hipfire_recoilfov_fix
-	TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21238",21238,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21275",21275,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21312",21312,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21349",21349,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"21238",21238,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"21275",21275,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"21312",21312,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"21349",21349,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian --fov_EDIT")
 ;MAG_hipfire_recoilfov_fix
-	TF_ReplaceLine(INV_GEN,"20747",20747,"        ShootVertRecoil(0.017); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21238",21238,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21275",21275,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21312",21312,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21349",21349,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"20747",20747,"        ShootVertRecoil(0.017); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"20802",20802,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"20839",20839,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"20876",20876,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"20914",20914,"        ShootVertRecoil(0.01); //Modified_by_FireEyeEian --fov_EDIT")
 ;m9_hipfire_recoilfov_fix
-	TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian --fov_EDIT")
 ;mcalls_hipfire_recoilfov_fix
-	TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian --fov_EDIT")
 SplashTextOff
-MsgBox, 4160, FOV CHANGE, ➤FOV changed to 72 (+10)`n➤Pistol & shotgun Recoil scaled to fov`n`nPlease note: as fov increases so does bullet spread when hip-firing.`nAlso I highly recomended enabling "Better weapon POV" as it fixes clipping and other issues when at a higher fov and in general.,
+MsgBox, 4160, FOV CHANGE, ➤FOV changed to 72 (+10)`n➤Pistol & shotgun +Recoil scaled to fov`n`nPlease note: as fov increases so does bullet spread when hip-firing.`nAlso I highly recomended enabling "Better weapon POV" as it fixes clipping and other issues when at a higher fov and in general.,
 Enable_BUTTONS_Function()
 enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
@@ -1222,72 +1223,72 @@ SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE
 TF_ReplaceLine(Def_lev,"75",75,"	<prop n=""CameraDefaultFOV"" v=""82""/>	<!--  Modified by FireEyeEian-->")
 ;shotguns_recoilfov_fix
 	;Shotgun_shortgen
-	TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21452",21452,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21484",21484,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21516",21516,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21548",21548,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21452",21452,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21484",21484,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21516",21516,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21548",21548,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_gen
-	TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21651",21651,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21680",21680,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21709",21709,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21738",21738,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21651",21651,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21680",21680,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21709",21709,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21738",21738,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_bgen
-	TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21839",21839,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21868",21868,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21897",21897,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21926",21926,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21839",21839,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21868",21868,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21897",21897,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"21926",21926,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_cgen
-	TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22027",22027,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22056",22056,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22085",22085,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22114",22114,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22027",22027,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22056",22056,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22085",22085,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22114",22114,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_dGen
-	TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22215",22215,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22244",22244,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22273",22273,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22302",22302,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22215",22215,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22244",22244,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22273",22273,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22302",22302,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_EGen
-	TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22403",22403,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22432",22432,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22461",22461,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22490",22490,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22403",22403,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22432",22432,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22461",22461,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22490",22490,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;Shotgun_FGen
-	TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22591",22591,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22620",22620,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22649",22649,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"22678",22678,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22591",22591,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22620",22620,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22649",22649,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"22678",22678,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 	;leg_crowd_pleaser
-	TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"24943",24943,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"24974",24974,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"25005",25005,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"25036",25036,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.033);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"24943",24943,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"24974",24974,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"25005",25005,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
+		TF_ReplaceLine(INV_GEN,"25036",25036,"        ShootVertRecoil(0.14);       //Modified_by_FireEyeEian --fov_EDIT")
 ;pistols-recoilfov_fix
 ;deag_hipfire_recoilfov_fix
-	TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.008); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21238",21238,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21275",21275,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21312",21312,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21349",21349,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.008); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"21238",21238,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"21275",21275,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"21312",21312,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"21349",21349,"        ShootVertRecoil(0.03); //Modified_by_FireEyeEian --fov_EDIT")
 ;MAG_hipfire_recoilfov_fix
-	TF_ReplaceLine(INV_GEN,"20747",20747,"        ShootVertRecoil(0.010); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21238",21238,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21275",21275,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21312",21312,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
-		TF_ReplaceLine(INV_GEN,"21349",21349,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"20747",20747,"        ShootVertRecoil(0.010); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"20802",20802,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"20839",20839,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"20876",20876,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian --fov_EDIT")
+		;TF_ReplaceLine(INV_GEN,"20914",20914,"        ShootVertRecoil(0.02); //Modified_by_FireEyeEian --fov_EDIT")
 ;m9_hipfire_recoilfov_fix
-	TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian --fov_EDIT")
 ;mcalls_hipfire_recoilfov_fix
-	TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian --fov_EDIT")
 ;colt_hipfire_recoilfov_fix
-	TF_ReplaceLine(INV_GEN,"20528",20528,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
+	TF_ReplaceLine(INV_GEN,"20528",20528,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian --fov_EDIT")
 SplashTextOff
 MsgBox, 4160, FOV CHANGE, ➤FOV changed to 82 (+20)`n➤Pistol & shotgun Recoil scaled to fov`n`nPlease note: as fov increases so does bullet spread when hip-firing.`nAlso I highly recomended enabling "Better weapon POV" as it fixes clipping and other issues when at a higher fov and in general.,
 Enable_BUTTONS_Function()
@@ -2419,8 +2420,8 @@ TF_ReplaceLine(purna_skills,"176",176,"            <effect id=""InventorySize"" 
  TF_ReplaceLine(xian_skills,"123",123,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""103"" max_level=""3"" tier=""2"" desc_params=""6;12;18"">")
  TF_ReplaceLine(xian_skills,"125",125,"            <effect id=""InventorySize"" change=""6""/>")
  ;John
- TF_ReplaceLine(xian_skills,"146",146,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""235"" max_level=""3"" tier=""1"" desc_params=""6;12;18"">")
- TF_ReplaceLine(xian_skills,"148",148,"            <effect id=""InventorySize"" change=""6""/>")
+ TF_ReplaceLine(John_skills,"146",146,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""235"" max_level=""3"" tier=""1"" desc_params=""6;12;18"">")
+ TF_ReplaceLine(John_skills,"148",148,"            <effect id=""InventorySize"" change=""6""/>")
 SplashTextOff
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 MsgBox,4160,Even Deeper pockets,➤Even deeper pockets enabled`n  To use: Please purchase `"deeper pockets`" skill.
@@ -2443,8 +2444,8 @@ TF_ReplaceLine(purna_skills,"176",176,"            <effect id=""InventorySize"" 
  TF_ReplaceLine(xian_skills,"123",123,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""103"" max_level=""3"" tier=""2"" desc_params=""2;4;6"">")
  TF_ReplaceLine(xian_skills,"125",125,"            <effect id=""InventorySize"" change=""2""/>")
  ;John
- TF_ReplaceLine(xian_skills,"146",146,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""235"" max_level=""3"" tier=""1"" desc_params=""2;4;6"">")
- TF_ReplaceLine(xian_skills,"148",148,"            <effect id=""InventorySize"" change=""2""/>")
+ TF_ReplaceLine(John_skills,"146",146,"        <skill id=""DeeperPockets"" cat=""Tree3"" skill_id=""235"" max_level=""3"" tier=""1"" desc_params=""2;4;6"">")
+ TF_ReplaceLine(John_skills,"148",148,"            <effect id=""InventorySize"" change=""2""/>")
 SplashTextOff
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 MsgBox,4160,Even Deeper pockets,➤Even deeper pockets disabled.
@@ -2473,1059 +2474,1026 @@ If (ddl = "82")
 return
 
 betterweppov_62:
-DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;---weapon positions 
 ;Fury_guns\\\\\\\\\\\\\\\\\\
 ;Fury revolver-----------------------------------------------------------------------///////colt\\\\\\\--------------------------------------------------------------------------------------------------
 ;handoffset
-TF_ReplaceLine(INV_spec,"369",369,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"369",369,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_spec,"392",392,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"392",392,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Fury m9-----------------------------------------------------------------------///////colt\\\\\\\--------------------------------------------------------------------------------------------------
 ;handoffset
-TF_ReplaceLine(INV_spec,"449",449,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"449",449,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_spec,"473",473,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"473",473,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotguns\\\\\\\\\\\\\\\\\\\\
 ;leg_crowd
-TF_ReplaceLine(INV_GEN,"24884",24884,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24877",24877,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.010]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24884",24884,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24877",24877,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.010]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shorty
-TF_ReplaceLine(INV_GEN,"21392",21392,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21405",21405,"        AimFov(1.1); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21392",21392,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21405",21405,"        AimFov(1.1); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgen
-TF_ReplaceLine(INV_GEN,"21591",21591,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21591",21591,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot b_gen
-TF_ReplaceLine(INV_GEN,"21779",21779,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21779",21779,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot c_gen
-TF_ReplaceLine(INV_GEN,"21967",21967,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21967",21967,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot d_gen
-TF_ReplaceLine(INV_GEN,"22155",22155,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22148",22148,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22155",22155,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22148",22148,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot E_gen
-TF_ReplaceLine(INV_GEN,"22336",22336,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22343",22343,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22336",22336,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22343",22343,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot F_gen
-TF_ReplaceLine(INV_GEN,"22524",22524,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22531",22531,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22524",22524,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22531",22531,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ;Defender----------------------------------------------------------------------------------////////Defender\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix for hip fire hold
-TF_ReplaceLine(INV_GEN,"25071",25071,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25071",25071,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"25078",25078,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25078",25078,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"25133",25133,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25168",25168,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25203",25203,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25238",25238,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25133",25133,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25168",25168,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25203",25203,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25238",25238,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"25134",25134,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25169",25169,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25204",25204,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25239",25239,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25134",25134,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25169",25169,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25204",25204,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25239",25239,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"25091",25091,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25091",25091,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;singleshot b----------------------------------------------------------------------------    ------////////singleshot b\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"24432",24432,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24432",24432,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"24439",24439,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24439",24439,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24494",24494,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24533",24533,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24572",24572,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24611",24611,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24494",24494,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24533",24533,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24572",24572,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24611",24611,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"24495",24495,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24534",24534,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24573",24573,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24612",24612,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24495",24495,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24534",24534,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24573",24573,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24612",24612,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24452",24452,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24452",24452,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;singleshot----------------------------------------------------------------------------------////////singleshot\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"24207",24207,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24207",24207,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"24214",24214,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24214",24214,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24269",24269,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24308",24308,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24347",24347,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24386",24386,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24269",24269,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24308",24308,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24347",24347,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24386",24386,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"24270",24270,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24309",24309,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24348",24348,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24387",24387,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24270",24270,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24309",24309,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24348",24348,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24387",24387,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24227",24227,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24227",24227,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Burst b----------------------------------------------------------------------------------////////Burst b\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23982",23982,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23982",23982,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23989",23989,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23989",23989,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24044",24044,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24083",24083,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24122",24122,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24161",24161,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24044",24044,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24083",24083,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24122",24122,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24161",24161,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"24045",24045,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24084",24084,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24123",24123,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24162",24162,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24045",24045,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24084",24084,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24123",24123,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24162",24162,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24002",24002,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24002",24002,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Burst---------------------------------done-------------------------------------------------////////Burst\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23757",23757,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23757",23757,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23764",23764,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23764",23764,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23819",23819,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23858",23858,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23897",23897,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23936",23936,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23819",23819,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23858",23858,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23897",23897,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23936",23936,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23820",23820,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23859",23859,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23898",23898,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23937",23937,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23820",23820,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23859",23859,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23898",23898,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23937",23937,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23777",23777,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23777",23777,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto e gen----------------------------------------------------------------------------------////////Auto e gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23548",23548,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23548",23548,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23555",23555,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23555",23555,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23610",23610,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23645",23645,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23680",23680,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23715",23715,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23610",23610,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23645",23645,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23680",23680,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23715",23715,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23611",23611,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23646",23646,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23681",23681,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23716",23716,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23611",23611,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23646",23646,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23681",23681,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23716",23716,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23568",23568,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23568",23568,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto d gen---------------------------------------------------------------------------------////////Auto d gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23339",23339,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23339",23339,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23346",23346,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23346",23346,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23401",23401,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23436",23436,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23471",23471,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23506",23506,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23401",23401,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23436",23436,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23471",23471,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23506",23506,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23402",23402,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23437",23437,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23472",23472,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23507",23507,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23402",23402,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23437",23437,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23472",23472,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23507",23507,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23359",23359,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23359",23359,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto c gen----------------------------------------------------------------------------------////////Auto c gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23130",23130,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23130",23130,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23137",23137,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23137",23137,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23192",23192,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23227",23227,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23262",23262,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23297",23297,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23192",23192,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23227",23227,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23262",23262,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23297",23297,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23193",23193,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23228",23228,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23263",23263,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23298",23298,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23193",23193,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23228",23228,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23263",23263,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23298",23298,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23150",23150,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23150",23150,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto gen----------------------------------------------------------------------------------////////Auto gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"22712",22712,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22712",22712,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"22719",22719,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22719",22719,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"22774",22774,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22809",22809,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22844",22844,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22879",22879,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22774",22774,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22809",22809,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22844",22844,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22879",22879,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot
-TF_ReplaceLine(INV_GEN,"22775",22775,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22810",22810,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22845",22845,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22880",22880,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22775",22775,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22810",22810,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22845",22845,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22880",22880,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"22732",22732,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22732",22732,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto b gen----------------------------------------------------------------------------------////////Auto b gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"22921",22921,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22921",22921,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"22928",22928,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22928",22928,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"22983",22983,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23018",23018,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23053",23053,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23088",23088,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22983",22983,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23018",23018,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23053",23053,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23088",23088,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot
-TF_ReplaceLine(INV_GEN,"22984",22984,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23019",23019,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23054",23054,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23089",23089,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22984",22984,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23019",23019,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23054",23054,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23089",23089,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"22941",22941,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22941",22941,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;heavy pistol----------------------------------------------------------------------------------///////heavy pistol\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"21177",21177,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21177",21177,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"21232",21232,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.120]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21269",21269,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.120]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21306",21306,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.120]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21343",21343,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.120]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21232",21232,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21269",21269,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21306",21306,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21343",21343,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"21190",21190,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21190",21190,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;McCalls----------------------------------------------------------------------------------///////McCalls\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"24667",24667,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24667",24667,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24723",24723,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24760",24760,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24797",24797,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24834",24834,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24723",24723,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24760",24760,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24797",24797,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24834",24834,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24680",24680,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24680",24680,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Colt revolver-----------------------------------------------------------------------///////colt\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"20522",20522,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20522",20522,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"20580",20580,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20617",20617,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20654",20654,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20691",20691,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20580",20580,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20617",20617,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20654",20654,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20691",20691,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"20536",20536,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20536",20536,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;M9----------------------------------------------------------------------------------///////M9\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"20959",20959,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20959",20959,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"21015",21015,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21052",21052,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21089",21089,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21126",21126,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21015",21015,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21052",21052,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21089",21089,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21126",21126,"        HandOffset(HandModification_Normal, [0.0,0.0,0.120]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"20972",20972,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20972",20972,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Magnum revolver--------------------------------------------------------------------///////magnum\\\\\\\-------------------------------------------------------------------------------------------------
 ;handoffset
-TF_ReplaceLine(INV_GEN,"20796",20796,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20833",20833,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20870",20870,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20908",20908,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20796",20796,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20833",20833,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20870",20870,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20908",20908,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"20741",20741,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20741",20741,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"20754",20754,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20754",20754,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 Goto, swayfix_62
 return
-weppovfinal_62:   ;this shit something else, i could prob do it better but this is how my brain works
-gui,Submit,nohide
-GuiControlGet,Recoil_hfov_fix
-IfEqual, Recoil_hfov_fix, 1
-goto, weppovfinal_62_enablerecoil_fix
-IfEqual,Recoil_hfov_fix,0
-goto, weppovfinal_62_final
-return
-weppovfinal_62_enablerecoil_fix:
-TF_ReplaceLine(INV_GEN,"21187",21187,"        ShootRecoilTime(0.15); //Modified_by_FireEyeEian")
-goto, weppovfinal_62_final
 
 weppovfinal_62_final:
 SplashTextOff
-EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 ;SetTitleMatchMode, 2
-;if (id := WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+;if (id := WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 ;	EnableCloseButton(id)
-;RedrawSysmenu(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+;RedrawSysmenu(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 MsgBox,4160,Wep POV,➤Better weapon POV enabled (fov 62).
 Enable_BUTTONS_Function()
 return
 
 betterweppov_72:
-DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;---weapon positions
 ;Fury_guns\\\\\\\\\\\\\\\\\\
 ;Fury revolver-----------------------------------------------------------------------///////furycolt\\\\\\\--------------------------------------------------------------------------------------------------
 ;handoffset
-TF_ReplaceLine(INV_spec,"369",369,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"369",369,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_spec,"392",392,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"392",392,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Fury m9-----------------------------------------------------------------------///////furym9\\\\\\\--------------------------------------------------------------------------------------------------
 ;handoffset
-TF_ReplaceLine(INV_spec,"449",449,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"449",449,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_spec,"473",473,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"473",473,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotguns\\\\\\\\\\\\\\\\\\\\
 ;leg_crowd-----------------------------------------------------------------------/////leg_crwd\\\\\-------------------------------------------------------------------------
-TF_ReplaceLine(INV_GEN,"24884",24884,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24877",24877,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24884",24884,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24877",24877,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shorty
-TF_ReplaceLine(INV_GEN,"21392",21392,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21405",21405,"        AimFov(1.3); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21392",21392,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21405",21405,"        AimFov(1.3); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgen
-TF_ReplaceLine(INV_GEN,"21591",21591,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21591",21591,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot b_gen
-TF_ReplaceLine(INV_GEN,"21779",21779,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21779",21779,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot c_gen
-TF_ReplaceLine(INV_GEN,"21967",21967,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21967",21967,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot d_gen
-TF_ReplaceLine(INV_GEN,"22155",22155,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22148",22148,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22155",22155,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22148",22148,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot E_gen
-TF_ReplaceLine(INV_GEN,"22336",22336,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22343",22343,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22336",22336,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22343",22343,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot F_gen
-TF_ReplaceLine(INV_GEN,"22524",22524,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22531",22531,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22524",22524,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22531",22531,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ;Defender----------------------------------------------------------------------------------////////Defender\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix for hip fire hold
-TF_ReplaceLine(INV_GEN,"25071",25071,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25071",25071,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"25078",25078,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25078",25078,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"25133",25133,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25168",25168,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25203",25203,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25238",25238,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25133",25133,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25168",25168,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25203",25203,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25238",25238,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"25134",25134,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25169",25169,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25204",25204,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25239",25239,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25134",25134,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25169",25169,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25204",25204,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25239",25239,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"25091",25091,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25091",25091,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;singleshot b----------------------------------------------------------------------------------////////singleshot b\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"24432",24432,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24432",24432,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"24439",24439,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24439",24439,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24494",24494,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24533",24533,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24572",24572,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24611",24611,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24494",24494,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24533",24533,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24572",24572,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24611",24611,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"24495",24495,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24534",24534,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24573",24573,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24612",24612,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24495",24495,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24534",24534,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24573",24573,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24612",24612,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24452",24452,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24452",24452,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;singleshot----------------------------------------------------------------------------------////////singleshot\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"24207",24207,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24207",24207,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"24214",24214,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24214",24214,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24269",24269,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24308",24308,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24347",24347,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24386",24386,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24269",24269,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24308",24308,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24347",24347,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24386",24386,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"24270",24270,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24309",24309,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24348",24348,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24387",24387,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24270",24270,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24309",24309,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24348",24348,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24387",24387,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24227",24227,"        AimFov(1.8); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24227",24227,"        AimFov(1.8); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Burst b----------------------------------------------------------------------------------////////Burst b\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23982",23982,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23982",23982,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23989",23989,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23989",23989,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24044",24044,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24083",24083,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24122",24122,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24161",24161,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24044",24044,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24083",24083,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24122",24122,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24161",24161,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"24045",24045,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24084",24084,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24123",24123,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24162",24162,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24045",24045,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24084",24084,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24123",24123,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24162",24162,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24002",24002,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24002",24002,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Burst----------------------------------------------------------------------------------////////Burst\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23757",23757,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23757",23757,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23764",23764,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23764",23764,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23819",23819,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23858",23858,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23897",23897,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23936",23936,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23819",23819,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23858",23858,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23897",23897,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23936",23936,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23820",23820,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23859",23859,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23898",23898,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23937",23937,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23820",23820,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23859",23859,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23898",23898,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23937",23937,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23777",23777,"        AimFov(1.8); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23777",23777,"        AimFov(1.8); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto e gen----------------------------------------------------------------------------------////////Auto e gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23548",23548,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23548",23548,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23555",23555,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23555",23555,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23610",23610,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23645",23645,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23680",23680,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23715",23715,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23610",23610,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23645",23645,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23680",23680,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23715",23715,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23611",23611,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23646",23646,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23681",23681,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23716",23716,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23611",23611,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23646",23646,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23681",23681,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23716",23716,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23568",23568,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23568",23568,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto d gen----------------------------------------------------------------------------------////////Auto d gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23339",23339,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23339",23339,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23346",23346,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23346",23346,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23401",23401,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23436",23436,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23471",23471,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23506",23506,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23401",23401,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23436",23436,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23471",23471,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23506",23506,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23402",23402,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23437",23437,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23472",23472,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23507",23507,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23402",23402,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23437",23437,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23472",23472,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23507",23507,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23359",23359,"        AimFov(1.7); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23359",23359,"        AimFov(1.7); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto c gen----------------------------------------------------------------------------------////////Auto c gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23130",23130,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23130",23130,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23137",23137,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23137",23137,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23192",23192,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23227",23227,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23262",23262,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23297",23297,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23192",23192,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23227",23227,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23262",23262,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23297",23297,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23193",23193,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23228",23228,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23263",23263,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23298",23298,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23193",23193,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23228",23228,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23263",23263,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23298",23298,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23150",23150,"        AimFov(1.8); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23150",23150,"        AimFov(1.8); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto gen----------------------------------------------------------------------------------////////Auto gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"22712",22712,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22712",22712,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"22719",22719,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22719",22719,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"22774",22774,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22809",22809,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22844",22844,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22879",22879,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22774",22774,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22809",22809,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22844",22844,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22879",22879,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot
-TF_ReplaceLine(INV_GEN,"22775",22775,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22810",22810,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22845",22845,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22880",22880,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22775",22775,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22810",22810,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22845",22845,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22880",22880,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"22732",22732,"        AimFov(1.8); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22732",22732,"        AimFov(1.8); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto b gen----------------------------------------------------------------------------------////////Auto b gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"22921",22921,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22921",22921,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"22928",22928,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22928",22928,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"22983",22983,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23018",23018,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23053",23053,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23088",23088,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22983",22983,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23018",23018,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23053",23053,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23088",23088,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot
-TF_ReplaceLine(INV_GEN,"22984",22984,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23019",23019,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23054",23054,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23089",23089,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22984",22984,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23019",23019,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23054",23054,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23089",23089,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"22941",22941,"        AimFov(1.8); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22941",22941,"        AimFov(1.8); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;heavy pistol----------------------------------------------------------------------------------///////heavy pistol\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"21177",21177,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21177",21177,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"21232",21232,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21269",21269,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21306",21306,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21343",21343,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.070]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21232",21232,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21269",21269,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21306",21306,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21343",21343,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"21190",21190,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21190",21190,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;McCalls----------------------------------------------------------------------------------///////McCalls\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"24667",24667,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24667",24667,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24723",24723,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24760",24760,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24797",24797,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24834",24834,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24723",24723,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24760",24760,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24797",24797,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24834",24834,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24680",24680,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24680",24680,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Colt revolver-----------------------------------------------------------------------///////colt\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"20522",20522,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20522",20522,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"20580",20580,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20617",20617,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20654",20654,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20691",20691,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20580",20580,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20617",20617,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20654",20654,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20691",20691,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"20536",20536,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20536",20536,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;M9----------------------------------------------------------------------------------///////M9\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"20959",20959,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20959",20959,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"21015",21015,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21052",21052,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21089",21089,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21126",21126,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21015",21015,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21052",21052,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21089",21089,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21126",21126,"        HandOffset(HandModification_Normal, [0.0,0.0,0.070]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"20972",20972,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20972",20972,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Magnum revolver--------------------------------------------------------------------///////magnum\\\\\\\-------------------------------------------------------------------------------------------------
 ;handoffset
-TF_ReplaceLine(INV_GEN,"20796",20796,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20833",20833,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20870",20870,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20908",20908,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20796",20796,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20833",20833,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20870",20870,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20908",20908,"        HandOffset(HandModification_Normal, [0.000625,0.0,0.030]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"20741",20741,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20741",20741,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"20754",20754,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20754",20754,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 Goto, swayfix_72
 return
-weppovfinal_72:
-gui,Submit,nohide   ;this shit something else, i could prob do it better but this is how my brain works
-GuiControlGet,Recoil_hfov_fix
-IfEqual, Recoil_hfov_fix, 1
-goto, weppovfinal_72_enablerecoil_fix
-IfEqual,Recoil_hfov_fix,0
-goto, weppovfinal_72_final
-return
-weppovfinal_72_enablerecoil_fix:
-TF_ReplaceLine(INV_GEN,"21187",21187,"        ShootRecoilTime(0.15); //Modified_by_FireEyeEian")
-goto, weppovfinal_72_final
 
 weppovfinal_72_final:
 SplashTextOff
-EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 ;SetTitleMatchMode, 2
-;if (id := WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+;if (id := WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 ;	EnableCloseButton(id)
-;RedrawSysmenu(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+;RedrawSysmenu(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 MsgBox,4160,Wep POV,➤Better weapon POV enabled (fov 72).
 Enable_BUTTONS_Function()
 return
 
 betterweppov_82:
-DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;---weapon positions 
 ;Fury_guns\\\\\\\\\\\\\\\\\\
 ;Fury revolver-----------------------------------------------------------------------///////furycolt\\\\\\\--------------------------------------------------------------------------------------------------
 ;handoffset
-TF_ReplaceLine(INV_spec,"369",369,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"369",369,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_spec,"392",392,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"392",392,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Fury m9-----------------------------------------------------------------------///////furym9\\\\\\\--------------------------------------------------------------------------------------------------
 ;handoffset
-TF_ReplaceLine(INV_spec,"449",449,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"449",449,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_spec,"473",473,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_spec,"473",473,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotguns\\\\\\\\\\\\\\\\\\\\
 ;leg_crowd
-TF_ReplaceLine(INV_GEN,"24884",24884,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24877",24877,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24884",24884,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24877",24877,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shorty
-TF_ReplaceLine(INV_GEN,"21392",21392,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21405",21405,"        AimFov(1.2); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21392",21392,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21405",21405,"        AimFov(1.2); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgen
-TF_ReplaceLine(INV_GEN,"21591",21591,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21591",21591,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot b_gen
-TF_ReplaceLine(INV_GEN,"21779",21779,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21779",21779,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot c_gen
-TF_ReplaceLine(INV_GEN,"21967",21967,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21967",21967,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot d_gen
-TF_ReplaceLine(INV_GEN,"22155",22155,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22148",22148,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22155",22155,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22148",22148,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot E_gen
-TF_ReplaceLine(INV_GEN,"22336",22336,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22343",22343,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22336",22336,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22343",22343,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shot F_gen
-TF_ReplaceLine(INV_GEN,"22524",22524,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22531",22531,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22524",22524,"        HandOffset(HandModification_Normal, [-0.0000,-0.0050,0.020]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22531",22531,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ;Defender----------------------------------------------------------------------------------////////Defender\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix for hip fire hold
-TF_ReplaceLine(INV_GEN,"25071",25071,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25071",25071,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"25078",25078,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25078",25078,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"25133",25133,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25168",25168,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25203",25203,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25238",25238,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25133",25133,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25168",25168,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25203",25203,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25238",25238,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"25134",25134,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25169",25169,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25204",25204,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"25239",25239,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25134",25134,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25169",25169,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25204",25204,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"25239",25239,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"25091",25091,"        AimFov(1.9); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"25091",25091,"        AimFov(1.9); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;singleshot b----------------------------------------------------------------------------------////////singleshot b\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"24432",24432,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24432",24432,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"24439",24439,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24439",24439,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24494",24494,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24533",24533,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24572",24572,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24611",24611,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24494",24494,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24533",24533,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24572",24572,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24611",24611,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"24495",24495,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24534",24534,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24573",24573,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24612",24612,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24495",24495,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24534",24534,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24573",24573,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24612",24612,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24452",24452,"        AimFov(1.9); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24452",24452,"        AimFov(1.9); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;singleshot----------------------------------------------------------------------------------////////singleshot\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"24207",24207,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24207",24207,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"24214",24214,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24214",24214,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24269",24269,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24308",24308,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24347",24347,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24386",24386,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24269",24269,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24308",24308,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24347",24347,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24386",24386,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"24270",24270,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24309",24309,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24348",24348,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24387",24387,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24270",24270,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24309",24309,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24348",24348,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24387",24387,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24227",24227,"        AimFov(2.0); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24227",24227,"        AimFov(2.0); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Burst b----------------------------------------------------------------------------------////////Burst b\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23982",23982,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23982",23982,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23989",23989,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23989",23989,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24044",24044,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24083",24083,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24122",24122,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24161",24161,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24044",24044,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24083",24083,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24122",24122,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24161",24161,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"24045",24045,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24084",24084,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24123",24123,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24162",24162,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24045",24045,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24084",24084,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24123",24123,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24162",24162,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24002",24002,"        AimFov(1.9); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24002",24002,"        AimFov(1.9); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Burst----------------------------------------------------------------------------------////////Burst\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23757",23757,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23757",23757,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23764",23764,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23764",23764,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23819",23819,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23858",23858,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23897",23897,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23936",23936,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23819",23819,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23858",23858,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23897",23897,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23936",23936,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23820",23820,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23859",23859,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23898",23898,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23937",23937,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23820",23820,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23859",23859,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23898",23898,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23937",23937,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23777",23777,"        AimFov(2.0); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23777",23777,"        AimFov(2.0); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto e gen----------------------------------------------------------------------------------////////Auto e gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23548",23548,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23548",23548,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23555",23555,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23555",23555,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23610",23610,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23645",23645,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23680",23680,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23715",23715,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23610",23610,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23645",23645,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23680",23680,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23715",23715,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23611",23611,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23646",23646,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23681",23681,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23716",23716,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23611",23611,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23646",23646,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23681",23681,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23716",23716,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23568",23568,"        AimFov(1.9); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23568",23568,"        AimFov(1.9); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto d gen----------------------------------------------------------------------------------////////Auto d gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23339",23339,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23339",23339,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23346",23346,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23346",23346,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23401",23401,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23436",23436,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23471",23471,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23506",23506,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23401",23401,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23436",23436,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23471",23471,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23506",23506,"        HandOffset(HandModification_Normal, [-0.0062,-0.03570,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23402",23402,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23437",23437,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23472",23472,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23507",23507,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23402",23402,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23437",23437,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23472",23472,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23507",23507,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23359",23359,"        AimFov(1.9); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23359",23359,"        AimFov(1.9); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto c gen----------------------------------------------------------------------------------////////Auto c gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"23130",23130,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23130",23130,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"23137",23137,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23137",23137,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"23192",23192,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23227",23227,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23262",23262,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23297",23297,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23192",23192,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23227",23227,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23262",23262,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23297",23297,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot-----------------------------------------------------------------------------------------------------------------rotation
-TF_ReplaceLine(INV_GEN,"23193",23193,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23228",23228,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23263",23263,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23298",23298,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23193",23193,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23228",23228,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23263",23263,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23298",23298,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"23150",23150,"        AimFov(2.0); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"23150",23150,"        AimFov(2.0); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto gen----------------------------------------------------------------------------------////////Auto gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"22712",22712,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22712",22712,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"22719",22719,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22719",22719,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"22774",22774,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22809",22809,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22844",22844,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22879",22879,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22774",22774,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22809",22809,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22844",22844,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22879",22879,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot
-TF_ReplaceLine(INV_GEN,"22775",22775,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22810",22810,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22845",22845,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22880",22880,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22775",22775,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22810",22810,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22845",22845,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22880",22880,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"22732",22732,"        AimFov(2.0); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22732",22732,"        AimFov(2.0); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;auto b gen----------------------------------------------------------------------------------////////Auto b gen\\\\\\\\\--------------------------------------------------------------------------------------------------
 ;fix hip fire hold
-TF_ReplaceLine(INV_GEN,"22921",22921,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22921",22921,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //fixes hipfire hold //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"22928",22928,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22928",22928,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"22983",22983,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23018",23018,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23053",23053,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23088",23088,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22983",22983,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23018",23018,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23053",23053,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23088",23088,"        HandOffset(HandModification_Normal, [-0.0055,-0.03291,0.080]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Handrot
-TF_ReplaceLine(INV_GEN,"22984",22984,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23019",23019,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23054",23054,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"23089",23089,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22984",22984,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23019",23019,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23054",23054,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"23089",23089,"        HandRot(HandModification_Normal, [-0.6875,0.1875,0.0]); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"22941",22941,"        AimFov(2.0); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22941",22941,"        AimFov(2.0); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;heavy pistol----------------------------------------------------------------------------------///////heavy pistol\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"21177",21177,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21177",21177,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"21232",21232,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.040]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21269",21269,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.045]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21306",21306,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.045]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21343",21343,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.045]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21232",21232,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.040]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21269",21269,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.045]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21306",21306,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.045]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21343",21343,"        HandOffset(HandModification_Normal, [0.000625,-0.005,0.045]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"21190",21190,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21190",21190,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;McCalls----------------------------------------------------------------------------------///////McCalls\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"24667",24667,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24667",24667,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"24723",24723,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24760",24760,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24797",24797,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24834",24834,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24723",24723,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24760",24760,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24797",24797,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24834",24834,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"24680",24680,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24680",24680,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Colt revolver-----------------------------------------------------------------------///////colt\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"20522",20522,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20522",20522,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"20580",20580,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20617",20617,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20654",20654,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20691",20691,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20580",20580,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20617",20617,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20654",20654,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20691",20691,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"20536",20536,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20536",20536,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;M9----------------------------------------------------------------------------------///////M9\\\\\\\--------------------------------------------------------------------------------------------------
 ;blur
-TF_ReplaceLine(INV_GEN,"20959",20959,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20959",20959,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;handoffset
-TF_ReplaceLine(INV_GEN,"21015",21015,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21052",21052,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21089",21089,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21126",21126,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21015",21015,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21052",21052,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21089",21089,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21126",21126,"        HandOffset(HandModification_Normal, [0.0,0.0,0.040]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"20972",20972,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20972",20972,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 
 ;Magnum revolver--------------------------------------------------------------------///////magnum\\\\\\\-------------------------------------------------------------------------------------------------
 ;handoffset
-TF_ReplaceLine(INV_GEN,"20796",20796,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20833",20833,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20870",20870,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20908",20908,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20796",20796,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20833",20833,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20870",20870,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20908",20908,"        HandOffset(HandModification_Normal, [0.000625,0.0,-0.002]); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;blur
-TF_ReplaceLine(INV_GEN,"20741",20741,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20741",20741,"        AimBlurStart(0.01); // Converted //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;aimfov
-TF_ReplaceLine(INV_GEN,"20754",20754,"        AimFov(1.05); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20754",20754,"        AimFov(1.05); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 Goto, swayfix_82
 return
-weppovfinal_82:
-gui,Submit,nohide   ;this shit something else, i could prob do it better but this is how my brain works
-GuiControlGet,Recoil_hfov_fix
-IfEqual, Recoil_hfov_fix, 1
-goto, weppovfinal_82_enablerecoil_fix
-IfEqual,Recoil_hfov_fix,0
-goto, weppovfinal_82_final
-return
-weppovfinal_82_enablerecoil_fix:
-TF_ReplaceLine(INV_GEN,"21187",21187,"        ShootRecoilTime(0.15); //Modified_by_FireEyeEian")
-goto, weppovfinal_82_final
 
 weppovfinal_82_final:
 SplashTextOff
-EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 ;SetTitleMatchMode, 2
-;if (id := WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+;if (id := WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 ;	EnableCloseButton(id)
-;RedrawSysmenu(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
+;RedrawSysmenu(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian --wep_pov_EDIT"))
 MsgBox,4160,Wep POV,➤Better weapon POV enabled (fov 82).
 Enable_BUTTONS_Function()
 return
 
 swayfix_62:
 ;m9
-TF_ReplaceLine(INV_GEN,"21016",21016,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21053",21053,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21090",21090,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21127",21127,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21016",21016,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21053",21053,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21090",21090,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21127",21127,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Colt
-TF_ReplaceLine(INV_GEN,"20581",20581,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20618",20618,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20655",20655,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20692",20692,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20581",20581,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20618",20618,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20655",20655,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20692",20692,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Deagle
-TF_ReplaceLine(INV_GEN,"21233",21233,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21270",21270,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21307",21307,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21344",21344,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21233",21233,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21270",21270,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21307",21307,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21344",21344,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Magnum
-TF_ReplaceLine(INV_GEN,"20797",20797,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20834",20834,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20871",20871,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20909",20909,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20797",20797,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20834",20834,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20871",20871,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20909",20909,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Mcall's
-TF_ReplaceLine(INV_GEN,"24724",24724,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24761",24761,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24798",24798,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24835",24835,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian")
-Goto, weppovfinal_62
+TF_ReplaceLine(INV_GEN,"24724",24724,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24761",24761,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24798",24798,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24835",24835,"        SwayMaxAngle(0.007); //Modified_by_FireEyeEian --wep_pov_EDIT")
+Goto, weppovfinal_62_final
 return
 
 swayfix_72:
 ;M9
-TF_ReplaceLine(INV_GEN,"21016",21016,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21053",21053,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21090",21090,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21127",21127,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21016",21016,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21053",21053,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21090",21090,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21127",21127,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Colt
-TF_ReplaceLine(INV_GEN,"20581",20581,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20618",20618,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20655",20655,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20692",20692,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20581",20581,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20618",20618,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20655",20655,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20692",20692,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Deagle
-TF_ReplaceLine(INV_GEN,"21233",21233,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21270",21270,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21307",21307,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21344",21344,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21233",21233,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21270",21270,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21307",21307,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21344",21344,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Magnum
-TF_ReplaceLine(INV_GEN,"20797",20797,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20834",20834,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20871",20871,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20909",20909,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20797",20797,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20834",20834,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20871",20871,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20909",20909,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Mcall's
-TF_ReplaceLine(INV_GEN,"24724",24724,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24761",24761,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24798",24798,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24835",24835,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24724",24724,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24761",24761,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24798",24798,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24835",24835,"        SwayMaxAngle(0.005); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;;;;;
 ;;;;;
 ;shotgun_gen
-TF_ReplaceLine(INV_GEN,"21649",21649,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21678",21678,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21707",21707,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21736",21736,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21649",21649,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21678",21678,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21707",21707,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21736",21736,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_bgen
-TF_ReplaceLine(INV_GEN,"21837",21837,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21866",21866,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21895",21895,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21924",21924,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21837",21837,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21866",21866,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21895",21895,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21924",21924,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_cgen
-TF_ReplaceLine(INV_GEN,"22025",22025,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22054",22054,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22083",22083,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22112",22112,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22025",22025,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22054",22054,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22083",22083,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22112",22112,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_dgen
-TF_ReplaceLine(INV_GEN,"22213",22213,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22242",22242,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22271",22271,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22300",22300,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22213",22213,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22242",22242,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22271",22271,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22300",22300,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_egen
-TF_ReplaceLine(INV_GEN,"22401",22401,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22430",22430,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22459",22459,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22488",22488,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22401",22401,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22430",22430,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22459",22459,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22488",22488,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_fgen
-TF_ReplaceLine(INV_GEN,"22589",22589,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22618",22618,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22647",22647,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22676",22676,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22589",22589,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22618",22618,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22647",22647,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22676",22676,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_shorty
-TF_ReplaceLine(INV_GEN,"21450",21450,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21482",21482,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21514",21514,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21546",21546,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian")
-Goto, weppovfinal_72
+TF_ReplaceLine(INV_GEN,"21450",21450,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21482",21482,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21514",21514,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21546",21546,"        SwayMaxAngle(0.015); //Modified_by_FireEyeEian --wep_pov_EDIT")
+Goto, weppovfinal_72_final
 return
 
 swayfix_82:
 ;M9
-TF_ReplaceLine(INV_GEN,"21016",21016,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21053",21053,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21090",21090,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21127",21127,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21016",21016,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21053",21053,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21090",21090,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21127",21127,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Colt
-TF_ReplaceLine(INV_GEN,"20581",20581,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20618",20618,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20655",20655,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20692",20692,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20581",20581,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20618",20618,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20655",20655,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20692",20692,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Deagle
-TF_ReplaceLine(INV_GEN,"21233",21233,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21270",21270,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21307",21307,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21344",21344,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21233",21233,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21270",21270,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21307",21307,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21344",21344,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Magnum
-TF_ReplaceLine(INV_GEN,"20797",20797,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20834",20834,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20871",20871,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"20909",20909,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"20797",20797,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20834",20834,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20871",20871,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"20909",20909,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;Mcall's
-TF_ReplaceLine(INV_GEN,"24724",24724,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24761",24761,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24798",24798,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24835",24835,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"24724",24724,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24761",24761,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24798",24798,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"24835",24835,"        SwayMaxAngle(0.003); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;;;;;
 ;;;;;
 ;shotgun_gen
-TF_ReplaceLine(INV_GEN,"21649",21649,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21678",21678,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21707",21707,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21736",21736,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21649",21649,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21678",21678,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21707",21707,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21736",21736,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_bgen
-TF_ReplaceLine(INV_GEN,"21837",21837,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21866",21866,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21895",21895,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21924",21924,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"21837",21837,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21866",21866,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21895",21895,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21924",21924,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_cgen
-TF_ReplaceLine(INV_GEN,"22025",22025,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22054",22054,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22083",22083,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22112",22112,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22025",22025,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22054",22054,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22083",22083,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22112",22112,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_dgen
-TF_ReplaceLine(INV_GEN,"22213",22213,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22242",22242,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22271",22271,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22300",22300,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22213",22213,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22242",22242,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22271",22271,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22300",22300,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_egen
-TF_ReplaceLine(INV_GEN,"22401",22401,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22430",22430,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22459",22459,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22488",22488,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22401",22401,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22430",22430,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22459",22459,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22488",22488,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_fgen
-TF_ReplaceLine(INV_GEN,"22589",22589,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22618",22618,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22647",22647,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22676",22676,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
+TF_ReplaceLine(INV_GEN,"22589",22589,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22618",22618,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22647",22647,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"22676",22676,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
 ;shotgun_shorty
-TF_ReplaceLine(INV_GEN,"21450",21450,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21482",21482,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21514",21514,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21546",21546,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian")
-Goto, weppovfinal_82
+TF_ReplaceLine(INV_GEN,"21450",21450,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21482",21482,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21514",21514,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+TF_ReplaceLine(INV_GEN,"21546",21546,"        SwayMaxAngle(0.01); //Modified_by_FireEyeEian --wep_pov_EDIT")
+Goto, weppovfinal_82_final
 return
 
 
@@ -4016,87 +3984,7 @@ Enable_BUTTONS_Function()
 enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
 
-Recoil_hfov_fix:
-play_click_sound_func()
-gui,Submit,nohide
-GuiControlGet,Recoil_hfov_fix
-IfEqual, Recoil_hfov_fix, 1
-goto, Recoil_hfov_fix_yes
-IfEqual,Recoil_hfov_fix,0
-goto, Recoil_hfov_fix_no
-return
-Recoil_hfov_fix_yes:
-DISABLE_BUTTONS_Function()
-DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
-;shotguns_recoilfov_fix
-TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.01);       //Modified_by_FireEyeEian")
-;pistols-recoilfov_fix
-;deag_hipfire_recoilfov_fix
-TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
-;m9_hipfire_recoilfov_fix
-TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
-;mcalls_hipfire_recoilfov_fix
-TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.015); //Modified_by_FireEyeEian")
-gui,Submit,nohide
-GuiControlGet,better_wep_pov_var
-IfEqual, better_wep_pov_var, 1
-goto, better_wep_pov_var_ison
-IfEqual,better_wep_pov_var,0
-goto, better_wep_pov_var_isoff
 
-better_wep_pov_var_ison:
-;deag_aim_recoil_fix_recoilfov_fix
-TF_ReplaceLine(INV_GEN,"21187",21187,"        ShootRecoilTime(0.15); //Modified_by_FireEyeEian")
-Goto, complete_hfov_enabled
-;magnum_aim_recoil is ok enough
-better_wep_pov_var_isoff:
-Goto, complete_hfov_enabled
-
-complete_hfov_enabled:
-SplashTextOff
-MsgBox,4160,recoil fix option,➤high recoil fix for high fov enabled.
-enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-Enable_BUTTONS_Function()
-return
-
-Recoil_hfov_fix_no:
-DISABLE_BUTTONS_Function()
-DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
-;shotguns
-TF_ReplaceLine(INV_GEN,"21398",21398,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21597",21597,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21785",21785,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"21973",21973,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22161",22161,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22349",22349,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"22537",22537,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-TF_ReplaceLine(INV_GEN,"24890",24890,"        ShootVertRecoil(0.1);       //this_is_the_default_value //Modified_by_FireEyeEian")
-;pistols
-;deag_hipfire
-TF_ReplaceLine(INV_GEN,"21183",21183,"        ShootVertRecoil(0.025); //this_is_the_default_value //Modified_by_FireEyeEian")
-;m9_hipfire
-TF_ReplaceLine(INV_GEN,"20965",20965,"        ShootVertRecoil(0.025); //this_is_the_default_value //Modified_by_FireEyeEian")
-;mcalls_hipfire
-TF_ReplaceLine(INV_GEN,"24673",24673,"        ShootVertRecoil(0.025); //this_is_the_default_value //Modified_by_FireEyeEian")
-;wep_pov_fix_def_value
-TF_ReplaceLine(INV_GEN,"21187",21187,"        ShootRecoilTime(0.2); //this_is_the_default_value //Modified_by_FireEyeEian")
-Goto, complete_hfov_Disabled
-
-complete_hfov_Disabled:
-SplashTextOff
-MsgBox,4160,recoil fix option,➤high recoil fix for high fov Disabled.
-enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-Enable_BUTTONS_Function()
-return
 
 reducejumpstaminacost:
 play_click_sound_func()
@@ -4170,14 +4058,14 @@ DisableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 SplashTextOn, 700,105,Patching files,Please wait.... `n Patching files....`nNOTE: This could take up to 3 minutes, If you have a slow hard drive then your time might vary.`nif you think this is stuck, simply press `"Alt+Del`" on your keyboard or force close the application
 ;Strafing will no longer slow you down increase by 1.2 (48%)
 TF_ReplaceLine(Def_lev,"212",212,"	<prop n=""MoveStrafeMaxSpeed"" v=""3.70""/>	    <!-- Converted //Modified_by_FireEyeEian-->")
-;instant acceleration also increases acceleration by 2.0
+;instant acceleration also increases acceleration by 5.0
 TF_ReplaceLine(Def_lev,"215",215,"	<prop n=""MoveAcceleration"" v=""12.00""/>  	    <!-- Converted //Modified_by_FireEyeEian-->")
 TF_ReplaceLine(Def_lev,"216",216,"	<prop n=""MoveDeceleration"" v=""12.00""/>	    <!-- Converted //Modified_by_FireEyeEian-->")
-;slighty faster walking (+0.20) also makes walking backwards slighty faster (+0.20)
+;slighty faster walking (+0.20) also makes walking backwards slightly faster (+0.20)
 TF_ReplaceLine(Def_lev,"208",208,"	<prop n=""MoveForwardMaxSpeed"" v=""3.70""/>	    <!-- Converted //Modified_by_FireEyeEian-->")
 TF_ReplaceLine(Def_lev,"210",210,"	<prop n=""MoveBackwardMaxSpeed"" v=""2.70""/>	    <!-- Converted //Modified_by_FireEyeEian-->")
 SplashTextOff
-MsgBox,4160,Movement option,➤Strafing will no longer slow you down(`+1.2, 48`% increase)`n➤Acceleration increases by 2.0 (20`% increase) and instant acceleration`n➤Slighty faster walking `+0.20 (5.7`% increase)`n➤Slighty faster backwards `+0.20 (5.7`% increase),
+MsgBox,4160,Movement option,➤Strafing will no longer slow you down(`+1.2, 48`% increase)`n➤Acceleration increases by 5.0 (71.4`% increase) and instant acceleration`n➤Slighty faster walking `+0.20 (5.71`% increase)`n➤Slighty faster backwards `+0.20 (8`% increase),
 Enable_BUTTONS_Function()
 enableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
