@@ -460,7 +460,7 @@ zom_spawn_list:="Normal spawns||Butchers|Rams|Bloaters|Thugs|Suiciders|bandits w
 Gui, Add, DropDownList, x770 y372 w120 h200 vZombie_spawn_var, % zom_spawn_list
 GuiControlGet, ZOM_spawn_HWND, Hwnd, Zombie_spawn_var
 AddTooltip(ZOM_spawn_HWND,"force a specific zombie to spawn")
-
+ 
 Gui, Add, button, x895 y372 w90 h34 vconfirm_zom_spawn_var gSubmit_zombies_spawn,set spawn overide
 Gui, Font, S13 BOLD cwhite, Segoe ui
 Gui, Add, Text, x22 y165 w950 h59 +BackgroundTrans, -Tip: hover mouse over options to get more info
