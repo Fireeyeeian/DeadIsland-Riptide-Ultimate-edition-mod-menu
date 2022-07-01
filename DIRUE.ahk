@@ -413,7 +413,7 @@ Gui, Font, S10 BOLD Cblack , Segoe ui
 
 Gui, Add, CheckBox, x600 y419 w190 h30 vEven_Deeper_pockets_var gdeeper_pockets,Even Deeper pockets
 GuiControlGet, DP_HWND, Hwnd, Even_Deeper_pockets_var
-AddTooltip(DP_HWND,"Buffs the Deeper pockets skill`nGives more inventory slots per upgrade of the ""Deeper pockets skill""(max 30)`nPLEASE NOTE: if you are not starting a new play through (new character) then`n make sure you haven't got any of the ""Deeper pockets"" skill yet otherwise this is pointless to enable")
+AddTooltip(DP_HWND,"Buffs the Deeper pockets skill`nGives more inventory slots per upgrade of the ""Deeper pockets skill""(max 30)`nPLEASE NOTE: If you are not starting a new play through (new character) then`n make sure you haven't got any of the ""Deeper pockets"" skills unlocked yet otherwise this is pointless to enable")
 
 Gui, Add, CheckBox, x795 y419 w190 h30 vnoclip_truck_var gnoclip_truck,NoClip vehicles
 GuiControlGet, NOCLP_HWND, Hwnd, noclip_truck_var
@@ -460,7 +460,7 @@ zom_spawn_list:="Normal spawns||Butchers|Rams|Bloaters|Thugs|Suiciders|bandits w
 Gui, Add, DropDownList, x770 y372 w120 h200 vZombie_spawn_var, % zom_spawn_list
 GuiControlGet, ZOM_spawn_HWND, Hwnd, Zombie_spawn_var
 AddTooltip(ZOM_spawn_HWND,"force a specific zombie to spawn")
- 
+
 Gui, Add, button, x895 y372 w90 h34 vconfirm_zom_spawn_var gSubmit_zombies_spawn,set spawn overide
 Gui, Font, S13 BOLD cwhite, Segoe ui
 Gui, Add, Text, x22 y165 w950 h59 +BackgroundTrans, -Tip: hover mouse over options to get more info
@@ -478,7 +478,7 @@ Gui, Add, Text, x22 y300 w950 h50 +BackgroundTrans, 4. Select which modification
 Gui, Font, S10 BOLD Normal Cblack , Segoe ui
 Gui, Font, CYellow
 ;;;;;;;;;;;;;;;;;;;;;;;;VERSION NUMBER;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-Gui, Add, Text, x750 y64 w100 h30 +BackgroundTrans,Version 1.1 ;REMEMBER TO UPDATE VERSION XML FOR MAIN MENU
+Gui, Add, Text, x750 y64 w100 h30 +BackgroundTrans,Version 1.2 ;REMEMBER TO UPDATE VERSION XML FOR MAIN MENU
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;Gui, Show, x127 y87 h581 w1014, New GUI Window ;old method
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -611,7 +611,7 @@ FileCopy, %A_Temp%\@DIRUE_TEMPFILES\loose_files\menumain_pc.xui, %A_Temp%\@DIRUE
 ;TF_ReplaceInLines(gameini,"15","","0","1")
 TF_ReplaceLine(DLC_shop,"12 ",12,"	ColorItem(""Melee_AxeUniversalGen"", 1, 4, 1)")
 MsgBox,4160,NOTICE,Thank you for downloading and using my mod for Riptide definitive edition. This mod is the way I enjoy playing Riptide definitive edition. I also have a version for Dead island definitive edition and I plan on eventually porting to the OG versions of the games. I write these mods in my free time and I'd like to give a huge thank you to everyone who enjoys them, It means a lot! 
-MsgBox,4160,NOTICE,Please note:`nIt is highly recomended to start a new`nplaythrough (new character ) to use some of theses mods but it is not required
+;MsgBox,4160,NOTICE,Please note:`nIt is highly recomended to start a new`nplaythrough (new character ) to use some of theses mods but it is not required ;removed because only one or two require this
 GuiControl, enable,confirm_fov
 GuiControl, enabled,DDL
 GuiControl, Disable,select_folder_button
@@ -2411,7 +2411,7 @@ TF_ReplaceLine(purna_skills,"176",176,"            <effect id=""InventorySize"" 
  TF_ReplaceLine(John_skills,"148",148,"            <effect id=""InventorySize"" change=""6""/>")
 SplashTextOff
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
-MsgBox,4160,Even Deeper pockets,➤Even deeper pockets enabled`n  To use: Please purchase `"deeper pockets`" skill.
+MsgBox,4160,Even Deeper pockets,➤Even deeper pockets enabled`n  To use: Please purchase `"deeper pockets`" skill.`n`nPLEASE NOTE: If you are not starting a new play through (new character) then`n make sure you haven't got any of the ""Deeper pockets"" skills unlocked yet otherwise this is pointless to enable
 Enable_BUTTONS_Function()
 return
 Even_Deeper_pockets_var_no:
