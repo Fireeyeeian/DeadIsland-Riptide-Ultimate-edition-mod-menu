@@ -609,7 +609,7 @@ FileCopy, %A_Temp%\@DIRUE_TEMPFILES\loose_files\menumain_pc.xui, %A_Temp%\@DIRUE
 ;TF_ReplaceLine(gameini,"10",10,"GameName(""Dead Island - Definitive Edition, modded by FireEyeEian"");")
 ;TF_ReplaceInLines(gameini,"15","","//","") ;encoding issue, probably can be solved through some tf.ahk thing but whatever, instead copy pre-made file to datapak
 ;TF_ReplaceInLines(gameini,"15","","0","1")
-TF_ReplaceLine(DLC_shop,"12 ",12,"	ColorItem(""Melee_AxeUniversalGen"", 1, 4, 1)")
+;TF_ReplaceLine(DLC_shop,"12 ",12,"	ColorItem(""Melee_AxeUniversalGen"", 1, 4, 1)") ;not needed for riptide
 MsgBox,4160,NOTICE,Thank you for downloading and using my mod for Riptide definitive edition. This mod is the way I enjoy playing Riptide definitive edition. I also have a version for Dead island definitive edition and I plan on eventually porting to the OG versions of the games. I write these mods in my free time and I'd like to give a huge thank you to everyone who enjoys them, It means a lot! 
 ;MsgBox,4160,NOTICE,Please note:`nIt is highly recomended to start a new`nplaythrough (new character ) to use some of theses mods but it is not required ;removed because only one or two require this
 GuiControl, enable,confirm_fov
@@ -721,7 +721,7 @@ FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambie
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
 SmartZip("loose_files\Time-weather_vanilla.zip", "EXTRACTED_DATA0\data")
 SplashTextOff
-MsgBox, 4160, timeweather, ➤Weather set to vanilla (default),
+MsgBox, 4160, timeweather, ➤Time/Weather set to vanilla (default),
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
@@ -737,7 +737,7 @@ FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambie
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
 SmartZip("loose_files\time-weather_Just_night.zip", "EXTRACTED_DATA0\data")
 SplashTextOff
-MsgBox, 4160, timeweather, ➤Spawn overide set to ""Butchers""`n(May god have mercy on you) `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+MsgBox, 4160, timeweather, ➤Time/Weather set to Night,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
@@ -753,7 +753,7 @@ FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambie
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
 SmartZip("loose_files\time-weather_Rain_day.zip", "EXTRACTED_DATA0\data")
 SplashTextOff
-MsgBox, 4160, timeweather, ➤Spawn overide set to ""Rammers"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+MsgBox, 4160, timeweather, ➤Time/Weather set to Rainy day,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
@@ -769,7 +769,7 @@ FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambie
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
 SmartZip("loose_files\time-weather_Rain_night.zip", "EXTRACTED_DATA0\data")
 SplashTextOff
-MsgBox, 4160, timeweather, ➤Spawn overide set to ""Bloaters"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+MsgBox, 4160, timeweather, ➤Time/Weather set to Rainy night,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
@@ -785,7 +785,7 @@ FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambie
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
 SmartZip("loose_files\time-weather_storm_day.zip", "EXTRACTED_DATA0\data")
 SplashTextOff
-MsgBox, 4160, timeweather, ➤Spawn overide set to ""Bandits"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+MsgBox, 4160, timeweather, ➤Time/Weather set to Stormy day,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandUltimateEdition_By_FireEyeEian"))
 return
@@ -801,7 +801,7 @@ FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambie
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
 SmartZip("loose_files\time-weather_storm_night.zip", "EXTRACTED_DATA0\data")
 SplashTextOff
-MsgBox, 4160, timeweather, ➤Spawn overide set to ""Thugs"" `nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+MsgBox, 4160, timeweather, ➤Time/Weather set to Stormy night,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
@@ -817,7 +817,7 @@ FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambie
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
 SmartZip("loose_files\time-weather_Just_night_darker.zip", "EXTRACTED_DATA0\data")
 SplashTextOff
-MsgBox, 4160, timeweather, ➤Spawn overide set to ""Suiciders""`nNote: They really like to explode...`nPlease note that the full game has not been testing using these option and such may cuase weird things`, For example in the fight with "Wayne" you'll probabbly have to kill the zombies stuck behind the fences as these forced spawns might not be able to climb the fences,
+MsgBox, 4160, timeweather, ➤Time/Weather set to Dark night,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
@@ -833,7 +833,7 @@ FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambie
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
 SmartZip("loose_files\time-weather_Rain_night_darker.zip", "EXTRACTED_DATA0\data")
 SplashTextOff
-MsgBox, 4160, timeweather, ➤Zombies spawns set to Normal (default),
+MsgBox, 4160, timeweather, ➤Time/Weather set to Dark rainy night,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return
@@ -849,7 +849,7 @@ FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\varlist_ambie
 FileDelete, %A_Temp%\@DIRUE_TEMPFILES\EXTRACTED_DATA0\data\scripts\logic_script.scr
 SmartZip("loose_files\time-weather_storm_night_darker.zip", "EXTRACTED_DATA0\data")
 SplashTextOff
-MsgBox, 4160, timeweather, ➤Zombies spawns set to Normal (default),
+MsgBox, 4160, timeweather, ➤Time/Weather set to Dark stormy night,
 Enable_BUTTONS_Function()
 EnableCloseButton(WinExist("DeadIslandRiptideUltimateEdition_By_FireEyeEian"))
 return

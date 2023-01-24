@@ -1,0 +1,105 @@
+//w ustawieniach dwuargumentowych pierwszy z nich informuje o rodzaju zombiaka
+
+
+
+!RunMinDist( f )
+!RunMaxDist( f )
+!MaxRunningZombies( i )
+!MaxBerserkerZombies( i )
+!MaxZombiesAttackPlayer( i )
+!PlayerSpeed( f )
+!MaxMeleeDist( f )
+
+
+!TimeBetweenBerserker( f )
+
+
+!TimeBetweenBerserker( f )
+
+!MaxAttackTimeInBerserker( f )
+!MaxBerserkerTime( f )
+
+!m_Loiter2NoticeLongDistMax( f )
+!m_Loiter2NoticeShortDistMax( f )
+
+!m_Run2LoiterLongDistMin( f )
+!m_Run2LoiterShortDistMin( f )
+
+!m_WoundedRun2LoiterLongDistMin( f )
+!m_WoundedRun2LoiterShortDistMin( f )
+
+
+!Long_RunUpStartDist( f )
+!Long_RunUpStopTime( f )
+!Long_RunUpStopAngle( f )
+!Long_RunUpStopAgility( f )
+
+!Short_RunUpStartDist( f )
+!Short_RunUpStopTime( f )
+!Short_RunUpStopAngle( f )
+!Short_RunUpStopAgility( f )
+!MaxBiteYDiff(f)
+
+!RepulsionDist( f )
+!RepulsionMul( f )
+!RepulsionPow( f )
+
+!Zombie_BiteDamage( f )
+!Zombie_HandsDamage( f )
+!MaxBiteAngleForPlayer( f )
+
+
+
+RepulsionDist(10.0)    // Converted
+RepulsionMul( 2.0 )
+RepulsionPow( 1.5 )
+
+
+
+RunMinDist(30.0)    // Converted
+RunMaxDist(50.0)    // Converted
+
+ 
+TimeBetweenBerserker( 3 )
+MaxAttackTimeInBerserker( 1.5 )//2.4f
+MaxBerserkerTime( 1.95 )
+
+
+
+
+MaxRunningZombies( 10 )//1
+MaxBerserkerZombies( 10 )//1
+MaxZombiesAttackPlayer( 20 )//1
+MaxMeleeDist(28.0)    // Converted
+
+
+
+PlayerSpeed(3.2)    // Converted
+
+m_Loiter2NoticeLongDistMax(35.0)    // Converted
+m_Loiter2NoticeShortDistMax(25.0)    // Converted
+
+m_Run2LoiterLongDistMin(36.0)    // Converted
+m_Run2LoiterShortDistMin(25.0)    // Converted
+
+m_WoundedRun2LoiterLongDistMin(36.0)    // Converted
+m_WoundedRun2LoiterShortDistMin(25.0)    // Converted
+
+
+Long_RunUpStartDist(4.0)    // Converted
+Long_RunUpStopTime( 1.5 )
+Long_RunUpStopAngle( 60. )
+Long_RunUpStopAgility( 0.3 )
+
+Short_RunUpStartDist(4.0)    // Converted
+Short_RunUpStopTime( 1.5 )
+Short_RunUpStopAngle( 60. )
+Short_RunUpStopAgility( 0.3 )
+MaxBiteYDiff(0.15)    // Converted
+
+
+Zombie_BiteDamage( 11. )
+Zombie_HandsDamage( 7. )
+MaxBiteAngleForPlayer( 60 )
+
+
